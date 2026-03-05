@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Star Sparrow Fleet</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script type="importmap">
   {
     "imports": {
@@ -296,6 +297,16 @@
     bottomLight.position.set(0, -5, 2);
     scene.add(bottomLight);
 
+    // --- Environment Map (needed for metallic surfaces) ---
+    const pmremGenerator = new THREE.PMREMGenerator(renderer);
+    const envScene = new THREE.Scene();
+    envScene.add(new THREE.HemisphereLight(0x2244aa, 0x080810, 1.5));
+    const envDirLight = new THREE.DirectionalLight(0xffeedd, 0.8);
+    envDirLight.position.set(3, 5, 4);
+    envScene.add(envDirLight);
+    scene.environment = pmremGenerator.fromScene(envScene).texture;
+    pmremGenerator.dispose();
+
     // --- Controls ---
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
@@ -458,8 +469,53 @@
     }
 
     const normalTexture = loadTex(TEX + 'StarSparrow_Normal.png', false);
-    const metallicTexture = loadTex(TEX + 'StarSparrow_MetallicSmoothness.png', false);
     const emissionTexture = loadTex(TEX + 'StarSparrow_Emission.png', true);
+
+    // Remap Unity MetallicSmoothness (R=metallic, A=smoothness)
+    // to Three.js format (B=metallic, G=roughness=1-smoothness)
+    let metalnessTexture = null;
+    let roughnessTexture = null;
+    const msImg = new Image();
+    msImg.crossOrigin = '';
+    msImg.onload = () => {
+      const c = document.createElement('canvas');
+      c.width = msImg.width; c.height = msImg.height;
+      const ctx = c.getContext('2d');
+      ctx.drawImage(msImg, 0, 0);
+      const data = ctx.getImageData(0, 0, c.width, c.height);
+      const px = data.data;
+
+      const metalData = ctx.createImageData(c.width, c.height);
+      const roughData = ctx.createImageData(c.width, c.height);
+      const mPx = metalData.data;
+      const rPx = roughData.data;
+
+      for (let i = 0; i < px.length; i += 4) {
+        const metallic = px[i];           // R channel = metallic
+        const smoothness = px[i + 3];     // A channel = smoothness
+        const roughness = 255 - smoothness;
+        // metalness texture (store in all RGB so any channel read works)
+        mPx[i] = metallic; mPx[i+1] = metallic; mPx[i+2] = metallic; mPx[i+3] = 255;
+        // roughness texture
+        rPx[i] = roughness; rPx[i+1] = roughness; rPx[i+2] = roughness; rPx[i+3] = 255;
+      }
+
+      const mc = document.createElement('canvas'); mc.width = c.width; mc.height = c.height;
+      mc.getContext('2d').putImageData(metalData, 0, 0);
+      metalnessTexture = new THREE.CanvasTexture(mc);
+      metalnessTexture.flipY = false;
+      metalnessTexture.colorSpace = THREE.LinearSRGBColorSpace;
+
+      const rc = document.createElement('canvas'); rc.width = c.width; rc.height = c.height;
+      rc.getContext('2d').putImageData(roughData, 0, 0);
+      roughnessTexture = new THREE.CanvasTexture(rc);
+      roughnessTexture.flipY = false;
+      roughnessTexture.colorSpace = THREE.LinearSRGBColorSpace;
+
+      // Re-apply material to current model if already loaded
+      if (currentModel) applyMaterial(currentModel, shipSkins[currentShipIndex]);
+    };
+    msImg.src = TEX + 'StarSparrow_MetallicSmoothness.png';
 
     function getSkinTexture(skinIndex) {
       const key = SKINS[skinIndex].file;
@@ -513,10 +569,10 @@
           const mat = new THREE.MeshStandardMaterial({
             map: hasUV ? colorTex : null,
             normalMap: hasUV ? normalTexture : null,
-            metalnessMap: hasUV ? metallicTexture : null,
-            roughnessMap: hasUV ? metallicTexture : null,
-            metalness: 1.0,
-            roughness: 1.0,
+            metalnessMap: hasUV && metalnessTexture ? metalnessTexture : null,
+            roughnessMap: hasUV && roughnessTexture ? roughnessTexture : null,
+            metalness: metalnessTexture ? 1.0 : 0.4,
+            roughness: roughnessTexture ? 1.0 : 0.5,
             emissiveMap: hasUV ? emissionTexture : null,
             emissive: new THREE.Color(0xffffff),
             emissiveIntensity: 1.5,
@@ -694,6 +750,13 @@
       exhaustMat.uniforms.uTime.value = t;
       starsBg.material.uniforms.uTime.value = t;
       composer.render();
+    }
+
+    // --- Telegram Web App fullscreen ---
+    if (window.Telegram && Telegram.WebApp) {
+      Telegram.WebApp.ready();
+      Telegram.WebApp.expand();
+      if (Telegram.WebApp.requestFullscreen) Telegram.WebApp.requestFullscreen();
     }
 
     // --- Init ---

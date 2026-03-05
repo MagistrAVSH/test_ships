@@ -1,0 +1,20 @@
+{
+  "name": "meshes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagistrAVSH/test_ships.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagistrAVSH/test_ships/issues"
+  },
+  "homepage": "https://github.com/MagistrAVSH/test_ships#readme",
+  "description": ""
+}
