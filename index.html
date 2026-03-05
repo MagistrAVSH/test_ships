@@ -96,6 +96,12 @@
       50% { transform: translateX(-50%) translateX(6px); }
     }
 
+    #stats {
+      position: fixed; bottom: calc(80px + env(safe-area-inset-bottom, 0px)); left: 8px;
+      color: rgba(160, 190, 230, 0.45); font-size: 10px; line-height: 1.4;
+      font-family: monospace; z-index: 10; pointer-events: none; white-space: pre;
+    }
+
     #loading {
       position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
       color: rgba(160, 190, 230, 0.7); font-size: 14px; letter-spacing: 1px; z-index: 20;
@@ -135,6 +141,7 @@
   <div id="arrow-left" class="nav-btn">&lsaquo;</div>
   <div id="arrow-right" class="nav-btn">&rsaquo;</div>
 
+  <div id="stats"></div>
   <div id="loading">Loading...</div>
 
   <script type="module">
@@ -742,6 +749,23 @@
     // --- Render Loop ---
     const clock = new THREE.Clock();
     let driftBase = 0;
+    let fpsFrames = 0, fpsTime = 0, fpsValue = 0;
+    const statsEl = document.getElementById('stats');
+
+    function countGeometry(obj) {
+      let verts = 0, tris = 0;
+      obj.traverse((c) => {
+        if (c.isMesh && c.geometry) {
+          const g = c.geometry;
+          const pos = g.getAttribute('position');
+          if (pos) verts += pos.count;
+          if (g.index) tris += g.index.count / 3;
+          else if (pos) tris += pos.count / 3;
+        }
+      });
+      return { verts, tris };
+    }
+
     function animate() {
       requestAnimationFrame(animate);
       const dt = clock.getDelta();
@@ -765,6 +789,16 @@
       // Update stars twinkle only every ~3 frames
       if ((t * 60 | 0) % 3 === 0) starsBg.material.uniforms.uTime.value = t;
       composer.render();
+
+      fpsFrames++;
+      fpsTime += dt;
+      if (fpsTime >= 0.5) {
+        fpsValue = Math.round(fpsFrames / fpsTime);
+        fpsFrames = 0;
+        fpsTime = 0;
+        const geo = currentModel ? countGeometry(currentModel) : { verts: 0, tris: 0 };
+        statsEl.textContent = `${fpsValue} FPS\n${geo.verts.toLocaleString()} verts\n${geo.tris.toLocaleString()} tris`;
+      }
     }
 
     // --- Telegram Web App fullscreen ---
