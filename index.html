@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>Star Sparrow Fleet</title>
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script>
+    if (window.TelegramWebviewProxy || navigator.userAgent.includes('Telegram')) {
+      var s = document.createElement('script');
+      s.src = 'https://telegram.org/js/telegram-web-app.js';
+      document.head.appendChild(s);
+    }
+  </script>
   <script type="importmap">
   {
     "imports": {
@@ -14,8 +20,16 @@
   }
   </script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { height: 100%; overflow: hidden; background: #040b15; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html, body {
+      height: 100%; overflow: hidden; background: #040b15;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      position: fixed; inset: 0; width: 100%;
+      touch-action: none;
+      overscroll-behavior: none;
+      -webkit-overflow-scrolling: none;
+      user-select: none; -webkit-user-select: none;
+    }
 
     canvas#viewer {
       display: block; width: 100%; height: 100%;
@@ -26,7 +40,7 @@
     }
 
     #ship-label {
-      position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+      position: fixed; top: calc(16px + env(safe-area-inset-top, 0px)); left: 50%; transform: translateX(-50%);
       background: rgba(10, 22, 40, 0.8); color: #c0d0e8; padding: 6px 18px;
       border-radius: 20px; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase;
       z-index: 10; pointer-events: none; white-space: nowrap;
@@ -53,7 +67,7 @@
     #skin-bar {
       position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
       display: flex; align-items: center; gap: 10px;
-      padding: 14px 16px; overflow-x: auto;
+      padding: 14px 16px calc(14px + env(safe-area-inset-bottom, 0px)); overflow-x: auto;
       background: rgba(10, 22, 40, 0.85);
       border-top: 1px solid rgba(100, 140, 200, 0.15);
       -webkit-overflow-scrolling: touch;
@@ -716,7 +730,7 @@
       const dy = e.changedTouches[0].clientY - touchStartY;
       const dt = Date.now() - touchStartTime;
 
-      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5 && dt < 400) {
+      if (Math.abs(dx) > 30 && Math.abs(dx) > Math.abs(dy) && dt < 600) {
         if (dx < 0) {
           showShip((currentShipIndex + 1) % SHIP_COUNT, 1);
         } else {
@@ -757,7 +771,14 @@
       Telegram.WebApp.ready();
       Telegram.WebApp.expand();
       if (Telegram.WebApp.requestFullscreen) Telegram.WebApp.requestFullscreen();
+      if (Telegram.WebApp.disableVerticalSwipes) Telegram.WebApp.disableVerticalSwipes();
     }
+
+    // --- Prevent page scroll / pull-to-refresh ---
+    document.addEventListener('touchmove', (e) => {
+      if (e.target.closest('#skin-bar')) return; // allow skin bar scroll
+      e.preventDefault();
+    }, { passive: false });
 
     // --- Init ---
     buildSkinBar();
