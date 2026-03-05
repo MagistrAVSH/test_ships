@@ -132,17 +132,18 @@
 
     // --- Constants ---
     const SHIP_COUNT = 20;
+    const TEX = './Textures/';
     const SKINS = [
-      { name: 'Red',    file: '../Textures/StarSparrow_Red.png',    color: '#e74c3c' },
-      { name: 'Blue',   file: '../Textures/StarSparrow_Blue.png',   color: '#3498db' },
-      { name: 'Cyan',   file: '../Textures/StarSparrow_Cyan.png',   color: '#1abc9c' },
-      { name: 'Green',  file: '../Textures/StarSparrow_Green.png',  color: '#27ae60' },
-      { name: 'Orange', file: '../Textures/StarSparrow_Orange.png', color: '#e67e22' },
-      { name: 'Yellow', file: '../Textures/StarSparrow_Yellow.png', color: '#f1c40f' },
-      { name: 'Purple', file: '../Textures/StarSparrow_Purple.png', color: '#9b59b6' },
-      { name: 'White',  file: '../Textures/StarSparrow_White.png',  color: '#ecf0f1' },
-      { name: 'Grey',   file: '../Textures/StarSparrow_Grey.png',   color: '#7f8c8d' },
-      { name: 'Black',  file: '../Textures/StarSparrow_Black.png',  color: '#2c3e50' },
+      { name: 'Red',    file: TEX + 'StarSparrow_Red.png',    color: '#e74c3c' },
+      { name: 'Blue',   file: TEX + 'StarSparrow_Blue.png',   color: '#3498db' },
+      { name: 'Cyan',   file: TEX + 'StarSparrow_Cyan.png',   color: '#1abc9c' },
+      { name: 'Green',  file: TEX + 'StarSparrow_Green.png',  color: '#27ae60' },
+      { name: 'Orange', file: TEX + 'StarSparrow_Orange.png', color: '#e67e22' },
+      { name: 'Yellow', file: TEX + 'StarSparrow_Yellow.png', color: '#f1c40f' },
+      { name: 'Purple', file: TEX + 'StarSparrow_Purple.png', color: '#9b59b6' },
+      { name: 'White',  file: TEX + 'StarSparrow_White.png',  color: '#ecf0f1' },
+      { name: 'Grey',   file: TEX + 'StarSparrow_Grey.png',   color: '#7f8c8d' },
+      { name: 'Black',  file: TEX + 'StarSparrow_Black.png',  color: '#2c3e50' },
     ];
 
     // --- State ---
@@ -386,6 +387,7 @@
         map: glowTexture,
         blending: THREE.AdditiveBlending,
         transparent: true,
+        depthWrite: false,
         opacity: 0.21,
         color: 0x5588ff,
       })
@@ -455,9 +457,9 @@
       return tex;
     }
 
-    const normalTexture = loadTex('../Textures/StarSparrow_Normal.png', false);
-    const metallicTexture = loadTex('../Textures/StarSparrow_MetallicSmoothness.png', false);
-    const emissionTexture = loadTex('../Textures/StarSparrow_Emission.png', true);
+    const normalTexture = loadTex(TEX + 'StarSparrow_Normal.png', false);
+    const metallicTexture = loadTex(TEX + 'StarSparrow_MetallicSmoothness.png', false);
+    const emissionTexture = loadTex(TEX + 'StarSparrow_Emission.png', true);
 
     function getSkinTexture(skinIndex) {
       const key = SKINS[skinIndex].file;
@@ -469,54 +471,64 @@
 
     // --- Model Loading ---
     const gltfLoader = new GLTFLoader();
-    const glbCache = {};
 
     function loadShip(index) {
-      if (glbCache[index]) return Promise.resolve(glbCache[index].clone());
       return new Promise((resolve, reject) => {
         const filename = `StarSparrow${index + 1}.glb`;
         gltfLoader.load(filename, (gltf) => {
-          glbCache[index] = gltf.scene;
-          resolve(gltf.scene.clone());
+          // Walk the full GLTF and collect every mesh from all scenes/nodes
+          const root = new THREE.Group();
+          gltf.scene.traverse((child) => {
+            if (child.isMesh) {
+              const clone = child.clone();
+              clone.geometry = child.geometry;
+              root.add(clone);
+            }
+          });
+          console.log(`Ship ${index + 1}: ${root.children.length} meshes, scene children: ${gltf.scene.children.length}, type: ${gltf.scene.type}`);
+          // If no meshes found in traverse, the root itself might be a mesh
+          if (root.children.length === 0 && gltf.scene.isMesh) {
+            root.add(gltf.scene);
+            console.log(`  -> root was a mesh, added directly`);
+          }
+          resolve(root.children.length > 0 ? root : gltf.scene);
         }, undefined, reject);
       });
     }
 
     function preloadAdjacent(index) {
-      const prev = (index - 1 + SHIP_COUNT) % SHIP_COUNT;
-      const next = (index + 1) % SHIP_COUNT;
-      [prev, next].forEach((i) => {
-        if (!glbCache[i]) {
-          const filename = `StarSparrow${i + 1}.glb`;
-          gltfLoader.load(filename, (gltf) => { glbCache[i] = gltf.scene; });
-        }
-      });
+      // Browser HTTP cache handles repeated requests
     }
 
     function applyMaterial(model, skinIndex) {
       const colorTex = getSkinTexture(skinIndex);
+      let count = 0;
       model.traverse((child) => {
         if (!child.isMesh) return;
+        count++;
+        const hasUV = child.geometry.hasAttribute('uv');
+        console.log(`  mesh: ${child.name}, verts: ${child.geometry.attributes.position.count}, hasUV: ${hasUV}, matType: ${child.material.type}`);
         const mats = Array.isArray(child.material) ? child.material : [child.material];
         const newMats = mats.map((orig) => {
           const mat = new THREE.MeshStandardMaterial({
-            map: colorTex,
-            normalMap: normalTexture,
-            metalnessMap: metallicTexture,
-            roughnessMap: metallicTexture,
+            map: hasUV ? colorTex : null,
+            normalMap: hasUV ? normalTexture : null,
+            metalnessMap: hasUV ? metallicTexture : null,
+            roughnessMap: hasUV ? metallicTexture : null,
             metalness: 1.0,
             roughness: 1.0,
-            emissiveMap: emissionTexture,
+            emissiveMap: hasUV ? emissionTexture : null,
             emissive: new THREE.Color(0xffffff),
             emissiveIntensity: 1.5,
-            side: orig.side,
-            transparent: orig.transparent,
-            opacity: orig.opacity,
+            side: orig.side !== undefined ? orig.side : THREE.FrontSide,
+            transparent: orig.transparent || false,
+            opacity: orig.opacity !== undefined ? orig.opacity : 1.0,
           });
           return mat;
         });
         child.material = newMats.length === 1 ? newMats[0] : newMats;
       });
+      console.log(`  total meshes textured: ${count}`);
     }
 
     // --- Ship Display ---
