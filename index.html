@@ -327,8 +327,7 @@
     controls.dampingFactor = 0.08;
     controls.enablePan = false;
     controls.enableZoom = false;
-    controls.autoRotate = true;
-    controls.autoRotateSpeed = 1.0;
+    controls.autoRotate = false;
     controls.minPolarAngle = Math.PI * 0.2;
     controls.maxPolarAngle = Math.PI * 0.8;
 
@@ -384,7 +383,7 @@
         void main() {
           float d = length(gl_PointCoord - 0.5) * 2.0;
           float falloff = 1.0 - smoothstep(0.0, 1.0, d);
-          gl_FragColor = vec4(uColor * 0.56, falloff * vAlpha * 0.28);
+          gl_FragColor = vec4(uColor * 0.3, falloff * vAlpha * 0.15);
         }
       `,
       transparent: true,
@@ -413,7 +412,7 @@
         blending: THREE.AdditiveBlending,
         transparent: true,
         depthWrite: false,
-        opacity: 0.21,
+        opacity: 0.12,
         color: 0x5588ff,
       })
     );
@@ -618,6 +617,7 @@
         const scale = 2.5 / maxDim;
         model.scale.setScalar(scale);
         model.position.copy(center.multiplyScalar(-scale));
+        driftBase = model.position.y;
 
         applyMaterial(model, shipSkins[index]);
         updateEngineColor(shipSkins[index]);
@@ -669,6 +669,7 @@
       const isLocked = !unlocked[currentShipIndex];
       canvas.classList.toggle('locked', isLocked);
       document.getElementById('lock-overlay').classList.toggle('hidden', !isLocked);
+      engineGroup.visible = !isLocked;
 
       updateSkinSelection();
     }
@@ -746,14 +747,22 @@
 
     // --- Render Loop ---
     const clock = new THREE.Clock();
+    let driftBase = 0;
     function animate() {
       requestAnimationFrame(animate);
       const dt = clock.getDelta();
+      const t = clock.elapsedTime;
       controls.update();
       updateExhaust(dt);
-      const t = clock.elapsedTime;
+
+      // Gentle drift
+      if (currentModel) {
+        currentModel.position.y = driftBase + Math.sin(t * 0.8) * 0.06;
+      }
+
       exhaustMat.uniforms.uTime.value = t;
-      starsBg.material.uniforms.uTime.value = t;
+      // Update stars twinkle only every ~3 frames
+      if ((t * 60 | 0) % 3 === 0) starsBg.material.uniforms.uTime.value = t;
       composer.render();
     }
 
