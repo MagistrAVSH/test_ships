@@ -245,7 +245,7 @@
             vec3 col = bg;
 
             // star layers
-            for (float layer = 0.0; layer < 3.0; layer++) {
+            for (float layer = 0.0; layer < 2.0; layer++) {
               float density = 80.0 + layer * 60.0;
               float brightness = 1.0 - layer * 0.3;
               float sizeRange = 1.2 - layer * 0.3;
@@ -337,15 +337,15 @@
     composer.addPass(new RenderPass(scene, camera));
 
     const bloomPass = new UnrealBloomPass(
-      new THREE.Vector2(window.innerWidth / 2, window.innerHeight / 2),
+      new THREE.Vector2(window.innerWidth / 4, window.innerHeight / 4),
       0.8,   // strength
-      0.4,   // radius
-      0.3    // threshold — low so emissive parts glow
+      0.3,   // radius
+      0.4    // threshold
     );
     composer.addPass(bloomPass);
 
     // --- Engine Exhaust ---
-    const ENGINE_PARTICLE_COUNT = 60;
+    const ENGINE_PARTICLE_COUNT = 40;
     const engineGroup = new THREE.Group();
     scene.add(engineGroup);
 
@@ -541,43 +541,35 @@
 
     // --- Model Loading ---
     const gltfLoader = new GLTFLoader();
+    const glbCache = {};
 
     function loadShip(index) {
+      if (glbCache[index]) return Promise.resolve(glbCache[index].clone());
       return new Promise((resolve, reject) => {
         const filename = `StarSparrow${index + 1}.glb`;
         gltfLoader.load(filename, (gltf) => {
-          // Walk the full GLTF and collect every mesh from all scenes/nodes
-          const root = new THREE.Group();
-          gltf.scene.traverse((child) => {
-            if (child.isMesh) {
-              const clone = child.clone();
-              clone.geometry = child.geometry;
-              root.add(clone);
-            }
-          });
-          console.log(`Ship ${index + 1}: ${root.children.length} meshes, scene children: ${gltf.scene.children.length}, type: ${gltf.scene.type}`);
-          // If no meshes found in traverse, the root itself might be a mesh
-          if (root.children.length === 0 && gltf.scene.isMesh) {
-            root.add(gltf.scene);
-            console.log(`  -> root was a mesh, added directly`);
-          }
-          resolve(root.children.length > 0 ? root : gltf.scene);
+          glbCache[index] = gltf.scene;
+          resolve(gltf.scene.clone());
         }, undefined, reject);
       });
     }
 
     function preloadAdjacent(index) {
-      // Browser HTTP cache handles repeated requests
+      const prev = (index - 1 + SHIP_COUNT) % SHIP_COUNT;
+      const next = (index + 1) % SHIP_COUNT;
+      [prev, next].forEach((i) => {
+        if (!glbCache[i]) {
+          const filename = `StarSparrow${i + 1}.glb`;
+          gltfLoader.load(filename, (gltf) => { glbCache[i] = gltf.scene; });
+        }
+      });
     }
 
     function applyMaterial(model, skinIndex) {
       const colorTex = getSkinTexture(skinIndex);
-      let count = 0;
       model.traverse((child) => {
         if (!child.isMesh) return;
-        count++;
         const hasUV = child.geometry.hasAttribute('uv');
-        console.log(`  mesh: ${child.name}, verts: ${child.geometry.attributes.position.count}, hasUV: ${hasUV}, matType: ${child.material.type}`);
         const mats = Array.isArray(child.material) ? child.material : [child.material];
         const newMats = mats.map((orig) => {
           const mat = new THREE.MeshStandardMaterial({
@@ -598,7 +590,6 @@
         });
         child.material = newMats.length === 1 ? newMats[0] : newMats;
       });
-      console.log(`  total meshes textured: ${count}`);
     }
 
     // --- Ship Display ---
