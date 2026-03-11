@@ -1,0 +1,36 @@
+{
+  "skins": [
+    { "name": "Red",    "file": "StarSparrow_Red.png",    "color": "#e74c3c", "unlocked": true },
+    { "name": "Blue",   "file": "StarSparrow_Blue.png",   "color": "#3498db", "unlocked": true },
+    { "name": "Cyan",   "file": "StarSparrow_Cyan.png",   "color": "#1abc9c", "unlocked": false },
+    { "name": "Green",  "file": "StarSparrow_Green.png",  "color": "#27ae60", "unlocked": false },
+    { "name": "Orange", "file": "StarSparrow_Orange.png", "color": "#e67e22", "unlocked": false },
+    { "name": "Yellow", "file": "StarSparrow_Yellow.png", "color": "#f1c40f", "unlocked": false },
+    { "name": "Purple", "file": "StarSparrow_Purple.png", "color": "#9b59b6", "unlocked": false },
+    { "name": "White",  "file": "StarSparrow_White.png",  "color": "#ecf0f1", "unlocked": true },
+    { "name": "Grey",   "file": "StarSparrow_Grey.png",   "color": "#7f8c8d", "unlocked": false },
+    { "name": "Black",  "file": "StarSparrow_Black.png",  "color": "#2c3e50", "unlocked": false }
+  ],
+  "ships": [
+    { "id": 1,  "name": "Vanguard",        "blackholeMultiplicator": 3,  "rarity": "common" },
+    { "id": 2,  "name": "Nebula Drifter",   "blackholeMultiplicator": 7,  "rarity": "rare" },
+    { "id": 3,  "name": "Iron Phantom",     "blackholeMultiplicator": 1,  "rarity": "common" },
+    { "id": 4,  "name": "Solar Fang",       "blackholeMultiplicator": 5,  "rarity": "rare" },
+    { "id": 5,  "name": "Starbreaker",      "blackholeMultiplicator": 9,  "rarity": "legendary" },
+    { "id": 6,  "name": "Void Runner",      "blackholeMultiplicator": 2,  "rarity": "common" },
+    { "id": 7,  "name": "Crimson Talon",    "blackholeMultiplicator": 6,  "rarity": "epic" },
+    { "id": 8,  "name": "Astral Hawk",      "blackholeMultiplicator": 4,  "rarity": "rare" },
+    { "id": 9,  "name": "Dark Comet",       "blackholeMultiplicator": 10, "rarity": "legendary" },
+    { "id": 10, "name": "Pulse Striker",    "blackholeMultiplicator": 8,  "rarity": "epic" },
+    { "id": 11, "name": "Wraith Wing",      "blackholeMultiplicator": 3,  "rarity": "common" },
+    { "id": 12, "name": "Photon Blade",     "blackholeMultiplicator": 7,  "rarity": "rare" },
+    { "id": 13, "name": "Silver Serpent",   "blackholeMultiplicator": 1,  "rarity": "common" },
+    { "id": 14, "name": "Quantum Fury",     "blackholeMultiplicator": 5,  "rarity": "epic" },
+    { "id": 15, "name": "Eclipse Raider",   "blackholeMultiplicator": 9,  "rarity": "epic" },
+    { "id": 16, "name": "Nova Interceptor", "blackholeMultiplicator": 2,  "rarity": "common" },
+    { "id": 17, "name": "Titanium Ghost",   "blackholeMultiplicator": 6,  "rarity": "rare" },
+    { "id": 18, "name": "Plasma Corsair",   "blackholeMultiplicator": 4,  "rarity": "common" },
+    { "id": 19, "name": "Zenith Arrow",     "blackholeMultiplicator": 10, "rarity": "rare" },
+    { "id": 20, "name": "Obsidian Storm",   "blackholeMultiplicator": 8,  "rarity": "common" }
+  ]
+}
