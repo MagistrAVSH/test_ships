@@ -873,7 +873,9 @@
     animate();
     loadShipData().then(() => {
       initSkinUnlocks();
-      showShip(0);
+      const startIdx = Math.floor(Math.random() * SHIPS.length);
+      unlockedShips.add(startIdx);
+      showShip(startIdx);
     });
 
     setTimeout(() => document.getElementById('swipe-hint').classList.add('fade-out'), 3000);
