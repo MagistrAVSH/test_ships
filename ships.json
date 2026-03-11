@@ -1,36 +1,4269 @@
 {
-  "skins": [
-    { "name": "Red",    "file": "StarSparrow_Red.png",    "color": "#e74c3c", "unlocked": true },
-    { "name": "Blue",   "file": "StarSparrow_Blue.png",   "color": "#3498db", "unlocked": true },
-    { "name": "Cyan",   "file": "StarSparrow_Cyan.png",   "color": "#1abc9c", "unlocked": false },
-    { "name": "Green",  "file": "StarSparrow_Green.png",  "color": "#27ae60", "unlocked": false },
-    { "name": "Orange", "file": "StarSparrow_Orange.png", "color": "#e67e22", "unlocked": false },
-    { "name": "Yellow", "file": "StarSparrow_Yellow.png", "color": "#f1c40f", "unlocked": false },
-    { "name": "Purple", "file": "StarSparrow_Purple.png", "color": "#9b59b6", "unlocked": false },
-    { "name": "White",  "file": "StarSparrow_White.png",  "color": "#ecf0f1", "unlocked": true },
-    { "name": "Grey",   "file": "StarSparrow_Grey.png",   "color": "#7f8c8d", "unlocked": false },
-    { "name": "Black",  "file": "StarSparrow_Black.png",  "color": "#2c3e50", "unlocked": false }
+  "textureGroups": [
+    {
+      "normalMap": "textures/AstroEagle/Standard/AstroEagle_Normal.png",
+      "metallicSmoothnessMap": "textures/AstroEagle/Standard/AstroEagle_MetallicSmoothness.png",
+      "emissionMap": "textures/AstroEagle/Standard/AstroEagle_Emission1.png",
+      "skins": [
+        {
+          "name": "Aqua",
+          "file": "textures/AstroEagle/Standard/AstroEagle_Aqua.png",
+          "color": "#00CED1",
+          "unlocked": true
+        },
+        {
+          "name": "Blue",
+          "file": "textures/AstroEagle/Standard/AstroEagle_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Green",
+          "file": "textures/AstroEagle/Standard/AstroEagle_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/AstroEagle/Standard/AstroEagle_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Orange",
+          "file": "textures/AstroEagle/Standard/AstroEagle_Orange.png",
+          "color": "#e67e22",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/AstroEagle/Standard/AstroEagle_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "PurpleBloom",
+          "file": "textures/AstroEagle/Standard/AstroEagle_PurpleBloom.png",
+          "color": "#A020F0",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/AstroEagle/Standard/AstroEagle_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Silver",
+          "file": "textures/AstroEagle/Standard/AstroEagle_Silver.png",
+          "color": "#C0C0C0",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/AstroEagle/Standard/AstroEagle_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/CosmicShark/CosmicShark_Normal.png",
+      "metallicSmoothnessMap": "textures/CosmicShark/CosmicShark_MetallicSmoothness.png",
+      "emissionMap": "textures/CosmicShark/CosmicShark_Emission.png",
+      "skins": [
+        {
+          "name": "Black",
+          "file": "textures/CosmicShark/CosmicShark_Black.png",
+          "color": "#2c3e50",
+          "unlocked": true
+        },
+        {
+          "name": "Blue",
+          "file": "textures/CosmicShark/CosmicShark_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Chartreuse",
+          "file": "textures/CosmicShark/CosmicShark_Chartreuse.png",
+          "color": "#7FFF00",
+          "unlocked": false
+        },
+        {
+          "name": "Cherry",
+          "file": "textures/CosmicShark/CosmicShark_Cherry.png",
+          "color": "#DE3163",
+          "unlocked": false
+        },
+        {
+          "name": "Cyan",
+          "file": "textures/CosmicShark/CosmicShark_Cyan.png",
+          "color": "#1abc9c",
+          "unlocked": false
+        },
+        {
+          "name": "Green",
+          "file": "textures/CosmicShark/CosmicShark_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/CosmicShark/CosmicShark_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/CosmicShark/CosmicShark_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/CosmicShark/CosmicShark_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/CosmicShark/CosmicShark_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        },
+        {
+          "name": "Yellow",
+          "file": "textures/CosmicShark/CosmicShark_Yellow.png",
+          "color": "#f1c40f",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/CraizanStar/CraizanStar_Normal.png",
+      "metallicSmoothnessMap": "textures/CraizanStar/CraizanStar_MetallicSmoothness.png",
+      "emissionMap": "textures/CraizanStar/CraizanStar_Emission1.png",
+      "skins": [
+        {
+          "name": "Black",
+          "file": "textures/CraizanStar/CraizanStar_Black.png",
+          "color": "#2c3e50",
+          "unlocked": true
+        },
+        {
+          "name": "Blue",
+          "file": "textures/CraizanStar/CraizanStar_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Emerald",
+          "file": "textures/CraizanStar/CraizanStar_Emerald.png",
+          "color": "#50C878",
+          "unlocked": false
+        },
+        {
+          "name": "Green",
+          "file": "textures/CraizanStar/CraizanStar_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/CraizanStar/CraizanStar_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Orange",
+          "file": "textures/CraizanStar/CraizanStar_Orange.png",
+          "color": "#e67e22",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/CraizanStar/CraizanStar_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/CraizanStar/CraizanStar_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Ruby",
+          "file": "textures/CraizanStar/CraizanStar_Ruby.png",
+          "color": "#E0115F",
+          "unlocked": false
+        },
+        {
+          "name": "Silver",
+          "file": "textures/CraizanStar/CraizanStar_Silver.png",
+          "color": "#C0C0C0",
+          "unlocked": false
+        },
+        {
+          "name": "Violet",
+          "file": "textures/CraizanStar/CraizanStar_Violet.png",
+          "color": "#8F00FF",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/CraizanStar/CraizanStar_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/ForceBadger/ForceBadger_Normal.png",
+      "metallicSmoothnessMap": "textures/ForceBadger/ForceBadger_MetallicSmoothness.png",
+      "emissionMap": "textures/ForceBadger/ForceBadger_Emission.png",
+      "skins": [
+        {
+          "name": "Black",
+          "file": "textures/ForceBadger/ForceBadger_Black.png",
+          "color": "#2c3e50",
+          "unlocked": true
+        },
+        {
+          "name": "Blue",
+          "file": "textures/ForceBadger/ForceBadger_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Cyan",
+          "file": "textures/ForceBadger/ForceBadger_Cyan.png",
+          "color": "#1abc9c",
+          "unlocked": false
+        },
+        {
+          "name": "Green",
+          "file": "textures/ForceBadger/ForceBadger_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/ForceBadger/ForceBadger_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Orange",
+          "file": "textures/ForceBadger/ForceBadger_Orange.png",
+          "color": "#e67e22",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/ForceBadger/ForceBadger_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/ForceBadger/ForceBadger_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/ForceBadger/ForceBadger_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Normal.png",
+      "metallicSmoothnessMap": "textures/GalacticLeopard/Main/GalacticLeopard_Main_MetallicSmoothness.png",
+      "emissionMap": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Emission1.png",
+      "skins": [
+        {
+          "name": "Black",
+          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Black.png",
+          "color": "#2c3e50",
+          "unlocked": true
+        },
+        {
+          "name": "Blue",
+          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Green",
+          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Orange",
+          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Orange.png",
+          "color": "#e67e22",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Silver",
+          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Silver.png",
+          "color": "#C0C0C0",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/GalacticOkamoto/GalacticOkamotoNormal.png",
+      "metallicSmoothnessMap": "textures/GalacticOkamoto/GalacticOkamoto_MetallicSmoothness.png",
+      "emissionMap": "textures/GalacticOkamoto/GalacticOkamoto_Emission.png",
+      "skins": [
+        {
+          "name": "Blue",
+          "file": "textures/GalacticOkamoto/GalacticOkamoto_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Green",
+          "file": "textures/GalacticOkamoto/GalacticOkamoto_Green.png",
+          "color": "#27ae60",
+          "unlocked": true
+        },
+        {
+          "name": "Grey",
+          "file": "textures/GalacticOkamoto/GalacticOkamoto_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Lime",
+          "file": "textures/GalacticOkamoto/GalacticOkamoto_Lime.png",
+          "color": "#32CD32",
+          "unlocked": false
+        },
+        {
+          "name": "Midnight",
+          "file": "textures/GalacticOkamoto/GalacticOkamoto_Midnight.png",
+          "color": "#191970",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/GalacticOkamoto/GalacticOkamoto_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/GalacticOkamoto/GalacticOkamoto_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Silver",
+          "file": "textures/GalacticOkamoto/GalacticOkamoto_Silver.png",
+          "color": "#C0C0C0",
+          "unlocked": false
+        },
+        {
+          "name": "Vessel",
+          "file": "textures/GalacticOkamoto/GalacticOkamoto_Vessel.png",
+          "color": "#4682B4",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/GalacticOkamoto/GalacticOkamoto_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/GalaxyRaptor/GalaxyRaptor_Normal.png",
+      "metallicSmoothnessMap": "textures/GalaxyRaptor/GalaxyRaptor_MetallicSmoothness.png",
+      "emissionMap": "textures/GalaxyRaptor/GalaxyRaptor_Emission1.png",
+      "skins": [
+        {
+          "name": "Blue",
+          "file": "textures/GalaxyRaptor/GalaxyRaptor_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Brown",
+          "file": "textures/GalaxyRaptor/GalaxyRaptor_Brown.png",
+          "color": "#8B4513",
+          "unlocked": true
+        },
+        {
+          "name": "Green",
+          "file": "textures/GalaxyRaptor/GalaxyRaptor_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/GalaxyRaptor/GalaxyRaptor_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/GalaxyRaptor/GalaxyRaptor_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/GalaxyRaptor/GalaxyRaptor_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Ruby",
+          "file": "textures/GalaxyRaptor/GalaxyRaptor_Ruby.png",
+          "color": "#E0115F",
+          "unlocked": false
+        },
+        {
+          "name": "Silver",
+          "file": "textures/GalaxyRaptor/GalaxyRaptor_Silver.png",
+          "color": "#C0C0C0",
+          "unlocked": false
+        },
+        {
+          "name": "Turquoise",
+          "file": "textures/GalaxyRaptor/GalaxyRaptor_Turquoise.png",
+          "color": "#40E0D0",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/GalaxyRaptor/GalaxyRaptor_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Normal.png",
+      "metallicSmoothnessMap": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_MetallicSmoothness.png",
+      "emissionMap": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Emission-1.png",
+      "skins": [
+        {
+          "name": "Blue",
+          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Green",
+          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Green.png",
+          "color": "#27ae60",
+          "unlocked": true
+        },
+        {
+          "name": "GreenYellow",
+          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_GreenYellow.png",
+          "color": "#ADFF2F",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Violet",
+          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Violet.png",
+          "color": "#8F00FF",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/HyperFalcon/HyperFalcon_Normal.png",
+      "metallicSmoothnessMap": "textures/HyperFalcon/HyperFalcon_MetallicSmoothness.png",
+      "emissionMap": "textures/HyperFalcon/HyperFalcon_Emission1.png",
+      "skins": [
+        {
+          "name": "Blue",
+          "file": "textures/HyperFalcon/HyperFalcon_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Cherry",
+          "file": "textures/HyperFalcon/HyperFalcon_Cherry.png",
+          "color": "#DE3163",
+          "unlocked": true
+        },
+        {
+          "name": "ExoticPurple",
+          "file": "textures/HyperFalcon/HyperFalcon_ExoticPurple.png",
+          "color": "#8B008B",
+          "unlocked": false
+        },
+        {
+          "name": "Gold",
+          "file": "textures/HyperFalcon/HyperFalcon_Gold.png",
+          "color": "#FFD700",
+          "unlocked": false
+        },
+        {
+          "name": "Green",
+          "file": "textures/HyperFalcon/HyperFalcon_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/HyperFalcon/HyperFalcon_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/HyperFalcon/HyperFalcon_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/HyperFalcon/HyperFalcon_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Silver",
+          "file": "textures/HyperFalcon/HyperFalcon_Silver.png",
+          "color": "#C0C0C0",
+          "unlocked": false
+        },
+        {
+          "name": "WaterMelon",
+          "file": "textures/HyperFalcon/HyperFalcon_WaterMelon.png",
+          "color": "#FC6C85",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/HyperFalcon/HyperFalcon_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/LightFox/LightFox_Normal.png",
+      "metallicSmoothnessMap": "textures/LightFox/LightFox_MetallicSmoothness.png",
+      "emissionMap": "textures/LightFox/LightFox_Emission1.png",
+      "skins": [
+        {
+          "name": "Blue",
+          "file": "textures/LightFox/LightFox_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Cherry",
+          "file": "textures/LightFox/LightFox_Cherry.png",
+          "color": "#DE3163",
+          "unlocked": true
+        },
+        {
+          "name": "Green",
+          "file": "textures/LightFox/LightFox_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/LightFox/LightFox_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Orange",
+          "file": "textures/LightFox/LightFox_Orange.png",
+          "color": "#e67e22",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/LightFox/LightFox_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/LightFox/LightFox_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Silver",
+          "file": "textures/LightFox/LightFox_Silver.png",
+          "color": "#C0C0C0",
+          "unlocked": false
+        },
+        {
+          "name": "Violet",
+          "file": "textures/LightFox/LightFox_Violet.png",
+          "color": "#8F00FF",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/LightFox/LightFox_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/MeteorMantis/MeteorMantis_Normal.png",
+      "metallicSmoothnessMap": "textures/MeteorMantis/MeteorMantis_MetallicSmoothness.png",
+      "emissionMap": "textures/MeteorMantis/MeteorMantis_Emission.png",
+      "skins": [
+        {
+          "name": "Blue",
+          "file": "textures/MeteorMantis/MeteorMantis_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Cyan",
+          "file": "textures/MeteorMantis/MeteorMantis_Cyan.png",
+          "color": "#1abc9c",
+          "unlocked": true
+        },
+        {
+          "name": "Green",
+          "file": "textures/MeteorMantis/MeteorMantis_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/MeteorMantis/MeteorMantis_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Lime",
+          "file": "textures/MeteorMantis/MeteorMantis_Lime.png",
+          "color": "#32CD32",
+          "unlocked": false
+        },
+        {
+          "name": "Orange",
+          "file": "textures/MeteorMantis/MeteorMantis_Orange.png",
+          "color": "#e67e22",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/MeteorMantis/MeteorMantis_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/MeteorMantis/MeteorMantis_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Violet",
+          "file": "textures/MeteorMantis/MeteorMantis_Violet.png",
+          "color": "#8F00FF",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/MeteorMantis/MeteorMantis_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/NightAye/NightAye_Normal.png",
+      "metallicSmoothnessMap": "textures/NightAye/NightAye_MetallicSmoothness.png",
+      "emissionMap": "textures/NightAye/NightAye_Emission1.png",
+      "skins": [
+        {
+          "name": "Beige",
+          "file": "textures/NightAye/NightAye_Beige.png",
+          "color": "#F5F5DC",
+          "unlocked": true
+        },
+        {
+          "name": "Blue",
+          "file": "textures/NightAye/NightAye_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Cyan",
+          "file": "textures/NightAye/NightAye_Cyan.png",
+          "color": "#1abc9c",
+          "unlocked": false
+        },
+        {
+          "name": "Green",
+          "file": "textures/NightAye/NightAye_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/NightAye/NightAye_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Lime",
+          "file": "textures/NightAye/NightAye_Lime.png",
+          "color": "#32CD32",
+          "unlocked": false
+        },
+        {
+          "name": "Orange",
+          "file": "textures/NightAye/NightAye_Orange.png",
+          "color": "#e67e22",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/NightAye/NightAye_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/NightAye/NightAye_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Tan",
+          "file": "textures/NightAye/NightAye_Tan.png",
+          "color": "#D2B48C",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/NightAye/NightAye_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/ProtonLegacy/ProtonLegacy_Normal.png",
+      "metallicSmoothnessMap": "textures/ProtonLegacy/ProtonLegacy_MetallicSmoothness.png",
+      "emissionMap": "textures/ProtonLegacy/ProtonLegacy_Emission1.png",
+      "skins": [
+        {
+          "name": "Blue",
+          "file": "textures/ProtonLegacy/ProtonLegacy_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Cyan",
+          "file": "textures/ProtonLegacy/ProtonLegacy_Cyan.png",
+          "color": "#1abc9c",
+          "unlocked": true
+        },
+        {
+          "name": "Gold",
+          "file": "textures/ProtonLegacy/ProtonLegacy_Gold.png",
+          "color": "#FFD700",
+          "unlocked": false
+        },
+        {
+          "name": "Green",
+          "file": "textures/ProtonLegacy/ProtonLegacy_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/ProtonLegacy/ProtonLegacy_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/ProtonLegacy/ProtonLegacy_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/ProtonLegacy/ProtonLegacy_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Ruby",
+          "file": "textures/ProtonLegacy/ProtonLegacy_Ruby.png",
+          "color": "#E0115F",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/ProtonLegacy/ProtonLegacy_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        },
+        {
+          "name": "Yellow",
+          "file": "textures/ProtonLegacy/ProtonLegacy_Yellow.png",
+          "color": "#f1c40f",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/SpaceExcalibur/SpaceExcalibur_Normal.png",
+      "metallicSmoothnessMap": "textures/SpaceExcalibur/SpaceExcalibur_MetallicSmoothness.png",
+      "emissionMap": "textures/SpaceExcalibur/SpaceExcalibur_Emission1.png",
+      "skins": [
+        {
+          "name": "Black",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_Black.png",
+          "color": "#2c3e50",
+          "unlocked": true
+        },
+        {
+          "name": "Blue",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Cyan",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_Cyan.png",
+          "color": "#1abc9c",
+          "unlocked": false
+        },
+        {
+          "name": "Emerald",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_Emerald.png",
+          "color": "#50C878",
+          "unlocked": false
+        },
+        {
+          "name": "Green",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "RedOriginal",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_RedOriginal.png",
+          "color": "#C0392B",
+          "unlocked": false
+        },
+        {
+          "name": "RoyalPurple",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_RoyalPurple.png",
+          "color": "#7851A9",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        },
+        {
+          "name": "Yellow",
+          "file": "textures/SpaceExcalibur/SpaceExcalibur_Yellow.png",
+          "color": "#f1c40f",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/SpaceSphinx/SpaceSphinx_Normal.png",
+      "metallicSmoothnessMap": "textures/SpaceSphinx/SpaceSphinx_MetallicSmoothness.png",
+      "emissionMap": "textures/SpaceSphinx/SpaceSphinx_Emission1.png",
+      "skins": [
+        {
+          "name": "Blue",
+          "file": "textures/SpaceSphinx/SpaceSphinx_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Cyan",
+          "file": "textures/SpaceSphinx/SpaceSphinx_Cyan.png",
+          "color": "#1abc9c",
+          "unlocked": true
+        },
+        {
+          "name": "Green",
+          "file": "textures/SpaceSphinx/SpaceSphinx_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/SpaceSphinx/SpaceSphinx_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Indigo",
+          "file": "textures/SpaceSphinx/SpaceSphinx_Indigo.png",
+          "color": "#4B0082",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/SpaceSphinx/SpaceSphinx_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/SpaceSphinx/SpaceSphinx_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "RedOriginal",
+          "file": "textures/SpaceSphinx/SpaceSphinx_RedOriginal.png",
+          "color": "#C0392B",
+          "unlocked": false
+        },
+        {
+          "name": "Tan",
+          "file": "textures/SpaceSphinx/SpaceSphinx_Tan.png",
+          "color": "#D2B48C",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/SpaceSphinx/SpaceSphinx_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        },
+        {
+          "name": "Yellow",
+          "file": "textures/SpaceSphinx/SpaceSphinx_Yellow.png",
+          "color": "#f1c40f",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/StarForce/StarForce_Normal.png",
+      "metallicSmoothnessMap": "textures/StarForce/StarForce_MetallicSmoothness.png",
+      "emissionMap": "textures/StarForce/StarForce_Emission.png",
+      "skins": [
+        {
+          "name": "Black",
+          "file": "textures/StarForce/StarForce_Black.png",
+          "color": "#2c3e50",
+          "unlocked": true
+        },
+        {
+          "name": "Blue",
+          "file": "textures/StarForce/StarForce_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Cyan",
+          "file": "textures/StarForce/StarForce_Cyan.png",
+          "color": "#1abc9c",
+          "unlocked": false
+        },
+        {
+          "name": "Green",
+          "file": "textures/StarForce/StarForce_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/StarForce/StarForce_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/StarForce/StarForce_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/StarForce/StarForce_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Silver",
+          "file": "textures/StarForce/StarForce_Silver.png",
+          "color": "#C0C0C0",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/StarForce/StarForce_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        },
+        {
+          "name": "Yellow",
+          "file": "textures/StarForce/StarForce_Yellow.png",
+          "color": "#f1c40f",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/StarSparrow/StarSparrow_Normal.png",
+      "metallicSmoothnessMap": "textures/StarSparrow/StarSparrow_MetallicSmoothness.png",
+      "emissionMap": "textures/StarSparrow/StarSparrow_Emission.png",
+      "skins": [
+        {
+          "name": "Black",
+          "file": "textures/StarSparrow/StarSparrow_Black.png",
+          "color": "#2c3e50",
+          "unlocked": true
+        },
+        {
+          "name": "Blue",
+          "file": "textures/StarSparrow/StarSparrow_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Cyan",
+          "file": "textures/StarSparrow/StarSparrow_Cyan.png",
+          "color": "#1abc9c",
+          "unlocked": false
+        },
+        {
+          "name": "Green",
+          "file": "textures/StarSparrow/StarSparrow_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/StarSparrow/StarSparrow_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Orange",
+          "file": "textures/StarSparrow/StarSparrow_Orange.png",
+          "color": "#e67e22",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/StarSparrow/StarSparrow_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/StarSparrow/StarSparrow_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/StarSparrow/StarSparrow_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        },
+        {
+          "name": "Yellow",
+          "file": "textures/StarSparrow/StarSparrow_Yellow.png",
+          "color": "#f1c40f",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/StriderOx/StriderOx_Normal.png",
+      "metallicSmoothnessMap": "textures/StriderOx/StriderOx_MetallicSmoothness.png",
+      "emissionMap": "textures/StriderOx/StriderOx_Emission.png",
+      "skins": [
+        {
+          "name": "Blue",
+          "file": "textures/StriderOx/StriderOx_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Green",
+          "file": "textures/StriderOx/StriderOx_Green.png",
+          "color": "#27ae60",
+          "unlocked": true
+        },
+        {
+          "name": "Grey",
+          "file": "textures/StriderOx/StriderOx_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Orange",
+          "file": "textures/StriderOx/StriderOx_Orange.png",
+          "color": "#e67e22",
+          "unlocked": false
+        },
+        {
+          "name": "Pine",
+          "file": "textures/StriderOx/StriderOx_Pine.png",
+          "color": "#01796F",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/StriderOx/StriderOx_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/StriderOx/StriderOx_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "Silver",
+          "file": "textures/StriderOx/StriderOx_Silver.png",
+          "color": "#C0C0C0",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/StriderOx/StriderOx_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        }
+      ]
+    },
+    {
+      "normalMap": "textures/VoidWhale/VoidWhale_Normal.png",
+      "metallicSmoothnessMap": "textures/VoidWhale/VoidWhale_MetallicSmoothness.png",
+      "emissionMap": "textures/VoidWhale/VoidWhale_Emission1.png",
+      "skins": [
+        {
+          "name": "Blue",
+          "file": "textures/VoidWhale/VoidWhale_Blue.png",
+          "color": "#3498db",
+          "unlocked": true
+        },
+        {
+          "name": "Cyan",
+          "file": "textures/VoidWhale/VoidWhale_Cyan.png",
+          "color": "#1abc9c",
+          "unlocked": true
+        },
+        {
+          "name": "Green",
+          "file": "textures/VoidWhale/VoidWhale_Green.png",
+          "color": "#27ae60",
+          "unlocked": false
+        },
+        {
+          "name": "Grey",
+          "file": "textures/VoidWhale/VoidWhale_Grey.png",
+          "color": "#7f8c8d",
+          "unlocked": false
+        },
+        {
+          "name": "Purple",
+          "file": "textures/VoidWhale/VoidWhale_Purple.png",
+          "color": "#9b59b6",
+          "unlocked": false
+        },
+        {
+          "name": "Red",
+          "file": "textures/VoidWhale/VoidWhale_Red.png",
+          "color": "#e74c3c",
+          "unlocked": false
+        },
+        {
+          "name": "RedOriginal",
+          "file": "textures/VoidWhale/VoidWhale_RedOriginal.png",
+          "color": "#C0392B",
+          "unlocked": false
+        },
+        {
+          "name": "Tan",
+          "file": "textures/VoidWhale/VoidWhale_Tan.png",
+          "color": "#D2B48C",
+          "unlocked": false
+        },
+        {
+          "name": "White",
+          "file": "textures/VoidWhale/VoidWhale_White.png",
+          "color": "#ecf0f1",
+          "unlocked": false
+        },
+        {
+          "name": "Yellow",
+          "file": "textures/VoidWhale/VoidWhale_Yellow.png",
+          "color": "#f1c40f",
+          "unlocked": false
+        }
+      ]
+    }
   ],
   "ships": [
-    { "id": 1,  "name": "Vanguard",        "blackholeMultiplicator": 3,  "rarity": "common" },
-    { "id": 2,  "name": "Nebula Drifter",   "blackholeMultiplicator": 7,  "rarity": "rare" },
-    { "id": 3,  "name": "Iron Phantom",     "blackholeMultiplicator": 1,  "rarity": "common" },
-    { "id": 4,  "name": "Solar Fang",       "blackholeMultiplicator": 5,  "rarity": "rare" },
-    { "id": 5,  "name": "Starbreaker",      "blackholeMultiplicator": 9,  "rarity": "legendary" },
-    { "id": 6,  "name": "Void Runner",      "blackholeMultiplicator": 2,  "rarity": "common" },
-    { "id": 7,  "name": "Crimson Talon",    "blackholeMultiplicator": 6,  "rarity": "epic" },
-    { "id": 8,  "name": "Astral Hawk",      "blackholeMultiplicator": 4,  "rarity": "rare" },
-    { "id": 9,  "name": "Dark Comet",       "blackholeMultiplicator": 10, "rarity": "legendary" },
-    { "id": 10, "name": "Pulse Striker",    "blackholeMultiplicator": 8,  "rarity": "epic" },
-    { "id": 11, "name": "Wraith Wing",      "blackholeMultiplicator": 3,  "rarity": "common" },
-    { "id": 12, "name": "Photon Blade",     "blackholeMultiplicator": 7,  "rarity": "rare" },
-    { "id": 13, "name": "Silver Serpent",   "blackholeMultiplicator": 1,  "rarity": "common" },
-    { "id": 14, "name": "Quantum Fury",     "blackholeMultiplicator": 5,  "rarity": "epic" },
-    { "id": 15, "name": "Eclipse Raider",   "blackholeMultiplicator": 9,  "rarity": "epic" },
-    { "id": 16, "name": "Nova Interceptor", "blackholeMultiplicator": 2,  "rarity": "common" },
-    { "id": 17, "name": "Titanium Ghost",   "blackholeMultiplicator": 6,  "rarity": "rare" },
-    { "id": 18, "name": "Plasma Corsair",   "blackholeMultiplicator": 4,  "rarity": "common" },
-    { "id": 19, "name": "Zenith Arrow",     "blackholeMultiplicator": 10, "rarity": "rare" },
-    { "id": 20, "name": "Obsidian Storm",   "blackholeMultiplicator": 8,  "rarity": "common" }
+    {
+      "id": 0,
+      "name": "Void Corsair Mk.I",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/AstroEagle/AstroEagle1.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 1,
+      "name": "Neon Runner Mk.II",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/AstroEagle/AstroEagle2.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 2,
+      "name": "Stealth Marauder Mk.III",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/AstroEagle/AstroEagle3.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 3,
+      "name": "Solar Fury Mk.IV",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/AstroEagle/AstroEagle4.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 4,
+      "name": "Ember Striker Mk.V",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/AstroEagle/AstroEagle5.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 5,
+      "name": "Cobalt Phoenix Mk.VI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/AstroEagle/AstroEagle6.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 6,
+      "name": "Plasma Voyager Mk.VII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/AstroEagle/AstroEagle7.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 7,
+      "name": "Shadow Wing Mk.VIII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/AstroEagle/AstroEagle8.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 8,
+      "name": "Nebula Corsair Mk.IX",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/AstroEagle/AstroEagle9.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 9,
+      "name": "Gilded Warden Mk.X",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/AstroEagle/AstroEagle10.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 10,
+      "name": "Omega Runner Mk.XI",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/AstroEagle/AstroEagle11.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 11,
+      "name": "Ember Ghost Mk.XII",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/AstroEagle/AstroEagle12.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 12,
+      "name": "Scarlet Pioneer Mk.XIII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/AstroEagle/AstroEagle13.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 13,
+      "name": "Omega Breaker Mk.XIV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/AstroEagle/AstroEagle14.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 14,
+      "name": "Fury Titan Mk.XV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/AstroEagle/AstroEagle15.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 15,
+      "name": "Prism Serpent Mk.XVI",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/AstroEagle/AstroEagle16.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 16,
+      "name": "Nova Valkyrie Mk.XVII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/AstroEagle/AstroEagle17.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 17,
+      "name": "Solar Raider Mk.XVIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/AstroEagle/AstroEagle18.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 18,
+      "name": "Omega Corsair Mk.XIX",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/AstroEagle/AstroEagle19.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 19,
+      "name": "Hyper Wing Mk.XX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/AstroEagle/AstroEagle20.glb",
+      "textureGroup": 0
+    },
+    {
+      "id": 20,
+      "name": "Ghost Valkyrie Mk.I",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/CosmicShark/CosmicShark1.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 21,
+      "name": "Azure Phoenix Mk.II",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/CosmicShark/CosmicShark2.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 22,
+      "name": "Fury Wing Mk.III",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/CosmicShark/CosmicShark3.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 23,
+      "name": "Zenith Wing Mk.IV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/CosmicShark/CosmicShark4.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 24,
+      "name": "Wraith Monarch Mk.V",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/CosmicShark/CosmicShark5.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 25,
+      "name": "Azure Sentinel Mk.VI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/CosmicShark/CosmicShark6.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 26,
+      "name": "Plasma Drifter Mk.VII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/CosmicShark/CosmicShark7.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 27,
+      "name": "Alpha Corsair Mk.VIII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/CosmicShark/CosmicShark8.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 28,
+      "name": "Prism Sentinel Mk.IX",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/CosmicShark/CosmicShark9.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 29,
+      "name": "Frost Seeker Mk.X",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/CosmicShark/CosmicShark10.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 30,
+      "name": "Quantum Ghost Mk.XI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/CosmicShark/CosmicShark11.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 31,
+      "name": "Ivory Avenger Mk.XII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/CosmicShark/CosmicShark12.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 32,
+      "name": "Ivory Spectre Mk.XIII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/CosmicShark/CosmicShark13.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 33,
+      "name": "Alpha Hunter Mk.XIV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/CosmicShark/CosmicShark14.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 34,
+      "name": "Thunder Lancer Mk.XV",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/CosmicShark/CosmicShark15.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 35,
+      "name": "Dark Comet Mk.XVI",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/CosmicShark/CosmicShark16.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 36,
+      "name": "Azure Marauder Mk.XVII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/CosmicShark/CosmicShark17.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 37,
+      "name": "Omega Stalker Mk.XVIII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/CosmicShark/CosmicShark18.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 38,
+      "name": "Mystic Ghost Mk.XIX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/CosmicShark/CosmicShark19.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 39,
+      "name": "Azure Talon Mk.XX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/CosmicShark/CosmicShark20.glb",
+      "textureGroup": 1
+    },
+    {
+      "id": 40,
+      "name": "Cosmic Phoenix Mk.I",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/CraizanStar/CraizanStar1.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 41,
+      "name": "Photon Marauder Mk.II",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/CraizanStar/CraizanStar2.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 42,
+      "name": "Shadow Ghost Mk.III",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/CraizanStar/CraizanStar3.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 43,
+      "name": "Thunder Runner Mk.IV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/CraizanStar/CraizanStar4.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 44,
+      "name": "Fury Charger Mk.V",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/CraizanStar/CraizanStar5.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 45,
+      "name": "Quantum Hunter Mk.VI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/CraizanStar/CraizanStar6.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 46,
+      "name": "Chaos Cruiser Mk.VII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/CraizanStar/CraizanStar7.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 47,
+      "name": "Titan Lancer Mk.VIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/CraizanStar/CraizanStar8.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 48,
+      "name": "Hyper Storm Mk.IX",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/CraizanStar/CraizanStar9.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 49,
+      "name": "Zenith Predator Mk.X",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/CraizanStar/CraizanStar10.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 50,
+      "name": "Scarlet Lancer Mk.XI",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/CraizanStar/CraizanStar11.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 51,
+      "name": "Gilded Ravager Mk.XII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/CraizanStar/CraizanStar12.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 52,
+      "name": "Neon Valkyrie Mk.XIII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/CraizanStar/CraizanStar13.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 53,
+      "name": "Astral Ghost Mk.XIV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/CraizanStar/CraizanStar14.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 54,
+      "name": "Viper Fury Mk.XV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/CraizanStar/CraizanStar15.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 55,
+      "name": "Jade Serpent Mk.XVI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/CraizanStar/CraizanStar16.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 56,
+      "name": "Alpha Valkyrie Mk.XVII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/CraizanStar/CraizanStar17.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 57,
+      "name": "Phantom Cruiser Mk.XVIII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/CraizanStar/CraizanStar18.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 58,
+      "name": "Zenith Raider Mk.XIX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/CraizanStar/CraizanStar19.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 59,
+      "name": "Void Spectre Mk.XX",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/CraizanStar/CraizanStar20.glb",
+      "textureGroup": 2
+    },
+    {
+      "id": 60,
+      "name": "Stealth Raider Mk.I",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/ForceBadger/ForceBadger1.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 61,
+      "name": "Cobalt Monarch Mk.II",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/ForceBadger/ForceBadger2.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 62,
+      "name": "Iron Drifter Mk.III",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/ForceBadger/ForceBadger3.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 63,
+      "name": "Iron Charger Mk.IV",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/ForceBadger/ForceBadger4.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 64,
+      "name": "Onyx Lancer Mk.V",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/ForceBadger/ForceBadger5.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 65,
+      "name": "Neon Predator Mk.VI",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/ForceBadger/ForceBadger6.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 66,
+      "name": "Zenith Ranger Mk.VII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/ForceBadger/ForceBadger7.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 67,
+      "name": "Silver Runner Mk.VIII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/ForceBadger/ForceBadger8.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 68,
+      "name": "Viper Reaper Mk.IX",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/ForceBadger/ForceBadger9.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 69,
+      "name": "Raven Phantom Mk.X",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/ForceBadger/ForceBadger10.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 70,
+      "name": "Pulse Seeker Mk.XI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/ForceBadger/ForceBadger11.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 71,
+      "name": "Storm Interceptor Mk.XII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/ForceBadger/ForceBadger12.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 72,
+      "name": "Chaos Voyager Mk.XIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/ForceBadger/ForceBadger13.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 73,
+      "name": "Crimson Corsair Mk.XIV",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/ForceBadger/ForceBadger14.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 74,
+      "name": "Iron Voyager Mk.XV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/ForceBadger/ForceBadger15.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 75,
+      "name": "Pulse Phoenix Mk.XVI",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/ForceBadger/ForceBadger16.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 76,
+      "name": "Solar Interceptor Mk.XVII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/ForceBadger/ForceBadger17.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 77,
+      "name": "Frost Ranger Mk.XVIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/ForceBadger/ForceBadger18.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 78,
+      "name": "Pulse Wing Mk.XIX",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/ForceBadger/ForceBadger19.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 79,
+      "name": "Omega Ghost Mk.XX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/ForceBadger/ForceBadger20.glb",
+      "textureGroup": 3
+    },
+    {
+      "id": 80,
+      "name": "Photon Marauder Mk.I",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/GalacticLeopard/GalacticLeopard1.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 81,
+      "name": "Quantum Serpent Mk.II",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/GalacticLeopard/GalacticLeopard2.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 82,
+      "name": "Pulse Spectre Mk.III",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticLeopard/GalacticLeopard3.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 83,
+      "name": "Ivory Sentinel Mk.IV",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/GalacticLeopard/GalacticLeopard4.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 84,
+      "name": "Stealth Ranger Mk.V",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticLeopard/GalacticLeopard5.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 85,
+      "name": "Astral Phantom Mk.VI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalacticLeopard/GalacticLeopard6.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 86,
+      "name": "Crimson Fang Mk.VII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalacticLeopard/GalacticLeopard7.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 87,
+      "name": "Azure Interceptor Mk.VIII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalacticLeopard/GalacticLeopard8.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 88,
+      "name": "Prism Interceptor Mk.IX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalacticLeopard/GalacticLeopard9.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 89,
+      "name": "Nova Titan Mk.X",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalacticLeopard/GalacticLeopard10.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 90,
+      "name": "Onyx Spectre Mk.XI",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GalacticLeopard/GalacticLeopard11.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 91,
+      "name": "Titan Ghost Mk.XII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalacticLeopard/GalacticLeopard12.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 92,
+      "name": "Cobalt Sentinel Mk.XIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/GalacticLeopard/GalacticLeopard13.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 93,
+      "name": "Alpha Hawk Mk.XIV",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GalacticLeopard/GalacticLeopard14.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 94,
+      "name": "Raven Sentinel Mk.XV",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/GalacticLeopard/GalacticLeopard15.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 95,
+      "name": "Shadow Pioneer Mk.XVI",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/GalacticLeopard/GalacticLeopard16.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 96,
+      "name": "Storm Fang Mk.XVII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalacticLeopard/GalacticLeopard17.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 97,
+      "name": "Thunder Ghost Mk.XVIII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalacticLeopard/GalacticLeopard18.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 98,
+      "name": "Iron Interceptor Mk.XIX",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GalacticLeopard/GalacticLeopard19.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 99,
+      "name": "Astral Voyager Mk.XX",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GalacticLeopard/GalacticLeopard20.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 100,
+      "name": "Drift Phoenix Alpha",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/GalacticLeopard/GalacticLeopard21.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 101,
+      "name": "Onyx Avenger Beta",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalacticLeopard/GalacticLeopard22.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 102,
+      "name": "Storm Hawk Gamma",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/GalacticLeopard/GalacticLeopard23.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 103,
+      "name": "Storm Avenger Delta",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticLeopard/GalacticLeopard24.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 104,
+      "name": "Photon Herald Epsilon",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GalacticLeopard/GalacticLeopard25.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 105,
+      "name": "Nebula Fury Omega",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/GalacticLeopard/GalacticLeopard26.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 106,
+      "name": "Thunder Lancer Prime",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/GalacticLeopard/GalacticLeopard27.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 107,
+      "name": "Solar Monarch Elite",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticLeopard/GalacticLeopard28.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 108,
+      "name": "Nova Vanguard Ace",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/GalacticLeopard/GalacticLeopard29.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 109,
+      "name": "Fury Ghost Zenith",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticLeopard/GalacticLeopard30.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 110,
+      "name": "Phantom Avenger Apex",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/GalacticLeopard/GalacticLeopard31.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 111,
+      "name": "Apex Vanguard Nova",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/GalacticLeopard/GalacticLeopard32.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 112,
+      "name": "Jade Comet Neo",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticLeopard/GalacticLeopard33.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 113,
+      "name": "Hyper Spectre Plus",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalacticLeopard/GalacticLeopard34.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 114,
+      "name": "Viper Hawk Ultra",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalacticLeopard/GalacticLeopard35.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 115,
+      "name": "Hyper Drifter EX",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GalacticLeopard/GalacticLeopard36.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 116,
+      "name": "Azure Interceptor GT",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticLeopard/GalacticLeopard37.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 117,
+      "name": "Comet Avenger RS",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/GalacticLeopard/GalacticLeopard38.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 118,
+      "name": "Drift Comet SE",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/GalacticLeopard/GalacticLeopard39.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 119,
+      "name": "Crimson Guardian X",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticLeopard/GalacticLeopard40.glb",
+      "textureGroup": 4
+    },
+    {
+      "id": 120,
+      "name": "Ivory Warden Mk.I",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto1.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 121,
+      "name": "Onyx Interceptor Mk.II",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto2.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 122,
+      "name": "Jade Runner Mk.III",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto3.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 123,
+      "name": "Blaze Raider Mk.IV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto4.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 124,
+      "name": "Comet Storm Mk.V",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto5.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 125,
+      "name": "Plasma Striker Mk.VI",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto6.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 126,
+      "name": "Alpha Warden Mk.VII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto7.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 127,
+      "name": "Cosmic Corsair Mk.VIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto8.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 128,
+      "name": "Thunder Seeker Mk.IX",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto9.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 129,
+      "name": "Void Talon Mk.X",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto10.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 130,
+      "name": "Stealth Ghost Mk.XI",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto11.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 131,
+      "name": "Ember Marauder Mk.XII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto12.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 132,
+      "name": "Titan Marauder Mk.XIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto13.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 133,
+      "name": "Dark Stalker Mk.XIV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto14.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 134,
+      "name": "Obsidian Drifter Mk.XV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto15.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 135,
+      "name": "Shadow Cruiser Mk.XVI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto16.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 136,
+      "name": "Hyper Marauder Mk.XVII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto17.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 137,
+      "name": "Nebula Titan Mk.XVIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto18.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 138,
+      "name": "Dark Storm Mk.XIX",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto19.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 139,
+      "name": "Onyx Guardian Mk.XX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto20.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 140,
+      "name": "Jade Arrow Alpha",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto21.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 141,
+      "name": "Silver Guardian Beta",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto22.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 142,
+      "name": "Azure Blade Gamma",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto23.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 143,
+      "name": "Eclipse Seeker Delta",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto24.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 144,
+      "name": "Eclipse Arrow Epsilon",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto25.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 145,
+      "name": "Stealth Herald Omega",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto26.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 146,
+      "name": "Raven Voyager Prime",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto27.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 147,
+      "name": "Ghost Charger Elite",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto28.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 148,
+      "name": "Astral Valkyrie Ace",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto29.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 149,
+      "name": "Thunder Valkyrie Zenith",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GalacticOkamoto/GalacticOkamoto30.glb",
+      "textureGroup": 5
+    },
+    {
+      "id": 150,
+      "name": "Solar Interceptor Mk.I",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor01.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 151,
+      "name": "Plasma Serpent Mk.II",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor02.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 152,
+      "name": "Nova Interceptor Mk.III",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor03.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 153,
+      "name": "Cosmic Fang Mk.IV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor04.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 154,
+      "name": "Fury Predator Mk.V",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor05.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 155,
+      "name": "Jade Stalker Mk.VI",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor06.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 156,
+      "name": "Zenith Comet Mk.VII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor07.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 157,
+      "name": "Gilded Runner Mk.VIII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor08.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 158,
+      "name": "Plasma Blade Mk.IX",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor09.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 159,
+      "name": "Pulse Avenger Mk.X",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor10.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 160,
+      "name": "Raven Hawk Mk.XI",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor11.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 161,
+      "name": "Onyx Cruiser Mk.XII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor12.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 162,
+      "name": "Titan Voyager Mk.XIII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor13.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 163,
+      "name": "Thunder Marauder Mk.XIV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor14.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 164,
+      "name": "Astral Ranger Mk.XV",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor15.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 165,
+      "name": "Gilded Interceptor Mk.XVI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor16.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 166,
+      "name": "Cosmic Cruiser Mk.XVII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor17.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 167,
+      "name": "Zenith Corsair Mk.XVIII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor18.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 168,
+      "name": "Cobalt Arrow Mk.XIX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor19.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 169,
+      "name": "Nebula Sentinel Mk.XX",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GalaxyRaptor/GalaxyRaptor20.glb",
+      "textureGroup": 6
+    },
+    {
+      "id": 170,
+      "name": "Neon Comet Mk.I",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GenericSpaceships/GenericSpaceship9.glb",
+      "textureGroup": 7
+    },
+    {
+      "id": 171,
+      "name": "Jade Comet Mk.II",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/GenericSpaceships/GenericSpaceship10.glb",
+      "textureGroup": 7
+    },
+    {
+      "id": 172,
+      "name": "Iron Guardian Mk.III",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/GenericSpaceships/GenericSpaceship11.glb",
+      "textureGroup": 7
+    },
+    {
+      "id": 173,
+      "name": "Chaos Pioneer Mk.IV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/GenericSpaceships/GenericSpaceship12.glb",
+      "textureGroup": 7
+    },
+    {
+      "id": 174,
+      "name": "Ghost Guardian Mk.V",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/GenericSpaceships/GenericSpaceship13.glb",
+      "textureGroup": 7
+    },
+    {
+      "id": 175,
+      "name": "Jade Striker Mk.VI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/GenericSpaceships/GenericSpaceship14.glb",
+      "textureGroup": 7
+    },
+    {
+      "id": 176,
+      "name": "Blaze Vanguard Mk.I",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/HyperFalcon/HyperFalcon1.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 177,
+      "name": "Gilded Stalker Mk.II",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/HyperFalcon/HyperFalcon2.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 178,
+      "name": "Chaos Ravager Mk.III",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/HyperFalcon/HyperFalcon3.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 179,
+      "name": "Frost Raider Mk.IV",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/HyperFalcon/HyperFalcon4.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 180,
+      "name": "Frost Striker Mk.V",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/HyperFalcon/HyperFalcon5.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 181,
+      "name": "Onyx Pegasus Mk.VI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/HyperFalcon/HyperFalcon6.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 182,
+      "name": "Scarlet Wing Mk.VII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/HyperFalcon/HyperFalcon7.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 183,
+      "name": "Neon Titan Mk.VIII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/HyperFalcon/HyperFalcon8.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 184,
+      "name": "Alpha Spectre Mk.IX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/HyperFalcon/HyperFalcon9.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 185,
+      "name": "Void Breaker Mk.X",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/HyperFalcon/HyperFalcon10.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 186,
+      "name": "Neon Pioneer Mk.XI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/HyperFalcon/HyperFalcon11.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 187,
+      "name": "Obsidian Stalker Mk.XII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/HyperFalcon/HyperFalcon12.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 188,
+      "name": "Raven Sentinel Mk.XIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/HyperFalcon/HyperFalcon13.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 189,
+      "name": "Wraith Guardian Mk.XIV",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/HyperFalcon/HyperFalcon14.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 190,
+      "name": "Blaze Striker Mk.XV",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/HyperFalcon/HyperFalcon15.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 191,
+      "name": "Comet Raider Mk.XVI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/HyperFalcon/HyperFalcon16.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 192,
+      "name": "Cosmic Phoenix Mk.XVII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/HyperFalcon/HyperFalcon17.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 193,
+      "name": "Zenith Serpent Mk.XVIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/HyperFalcon/HyperFalcon18.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 194,
+      "name": "Drift Comet Mk.XIX",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/HyperFalcon/HyperFalcon19.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 195,
+      "name": "Blaze Valkyrie Mk.XX",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/HyperFalcon/HyperFalcon20.glb",
+      "textureGroup": 8
+    },
+    {
+      "id": 196,
+      "name": "Ghost Pioneer Mk.I",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/LightFox/LightFox1.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 197,
+      "name": "Cosmic Hunter Mk.II",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/LightFox/LightFox2.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 198,
+      "name": "Ember Talon Mk.III",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/LightFox/LightFox3.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 199,
+      "name": "Eclipse Runner Mk.IV",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/LightFox/LightFox4.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 200,
+      "name": "Eclipse Predator Mk.V",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/LightFox/LightFox5.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 201,
+      "name": "Alpha Serpent Mk.VI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/LightFox/LightFox6.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 202,
+      "name": "Jade Monarch Mk.VII",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/LightFox/LightFox7.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 203,
+      "name": "Jade Storm Mk.VIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/LightFox/LightFox8.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 204,
+      "name": "Prism Drifter Mk.IX",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/LightFox/LightFox9.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 205,
+      "name": "Viper Valkyrie Mk.X",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/LightFox/LightFox10.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 206,
+      "name": "Thunder Phoenix Mk.XI",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/LightFox/LightFox11.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 207,
+      "name": "Delta Lancer Mk.XII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/LightFox/LightFox12.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 208,
+      "name": "Hyper Monarch Mk.XIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/LightFox/LightFox13.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 209,
+      "name": "Cobalt Comet Mk.XIV",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/LightFox/LightFox14.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 210,
+      "name": "Scarlet Cruiser Mk.XV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/LightFox/LightFox15.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 211,
+      "name": "Drift Ravager Mk.XVI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/LightFox/LightFox16.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 212,
+      "name": "Raven Marauder Mk.XVII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/LightFox/LightFox17.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 213,
+      "name": "Titan Interceptor Mk.XVIII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/LightFox/LightFox18.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 214,
+      "name": "Wraith Voyager Mk.XIX",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/LightFox/LightFox19.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 215,
+      "name": "Prism Titan Mk.XX",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/LightFox/LightFox20.glb",
+      "textureGroup": 9
+    },
+    {
+      "id": 216,
+      "name": "Nebula Striker Mk.I",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/MeteorMantis/MeteorMantis1.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 217,
+      "name": "Crimson Lancer Mk.II",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/MeteorMantis/MeteorMantis2.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 218,
+      "name": "Obsidian Warden Mk.III",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/MeteorMantis/MeteorMantis3.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 219,
+      "name": "Jade Corsair Mk.IV",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/MeteorMantis/MeteorMantis4.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 220,
+      "name": "Mystic Serpent Mk.V",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/MeteorMantis/MeteorMantis5.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 221,
+      "name": "Scarlet Guardian Mk.VI",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/MeteorMantis/MeteorMantis6.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 222,
+      "name": "Gilded Interceptor Mk.VII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/MeteorMantis/MeteorMantis7.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 223,
+      "name": "Saber Lancer Mk.VIII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/MeteorMantis/MeteorMantis8.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 224,
+      "name": "Solar Arrow Mk.IX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/MeteorMantis/MeteorMantis9.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 225,
+      "name": "Jade Interceptor Mk.X",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/MeteorMantis/MeteorMantis10.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 226,
+      "name": "Stealth Hunter Mk.XI",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/MeteorMantis/MeteorMantis11.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 227,
+      "name": "Mystic Reaper Mk.XII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/MeteorMantis/MeteorMantis12.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 228,
+      "name": "Apex Warden Mk.XIII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/MeteorMantis/MeteorMantis13.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 229,
+      "name": "Raven Corsair Mk.XIV",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/MeteorMantis/MeteorMantis14.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 230,
+      "name": "Plasma Talon Mk.XV",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/MeteorMantis/MeteorMantis15.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 231,
+      "name": "Titan Talon Mk.XVI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/MeteorMantis/MeteorMantis16.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 232,
+      "name": "Silver Fury Mk.XVII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/MeteorMantis/MeteorMantis17.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 233,
+      "name": "Wraith Spectre Mk.XVIII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/MeteorMantis/MeteorMantis18.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 234,
+      "name": "Storm Serpent Mk.XIX",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/MeteorMantis/MeteorMantis19.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 235,
+      "name": "Hyper Blade Mk.XX",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/MeteorMantis/MeteorMantis20.glb",
+      "textureGroup": 10
+    },
+    {
+      "id": 236,
+      "name": "Cobalt Ravager Mk.I",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/NightAye/NightAye1.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 237,
+      "name": "Nova Phantom Mk.II",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/NightAye/NightAye2.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 238,
+      "name": "Jade Hawk Mk.III",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/NightAye/NightAye3.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 239,
+      "name": "Storm Vanguard Mk.IV",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/NightAye/NightAye4.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 240,
+      "name": "Blaze Ranger Mk.V",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/NightAye/NightAye5.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 241,
+      "name": "Crimson Phantom Mk.VI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/NightAye/NightAye6.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 242,
+      "name": "Dark Fang Mk.VII",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/NightAye/NightAye7.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 243,
+      "name": "Iron Predator Mk.VIII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/NightAye/NightAye8.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 244,
+      "name": "Quantum Comet Mk.IX",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/NightAye/NightAye9.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 245,
+      "name": "Solar Interceptor Mk.X",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/NightAye/NightAye10.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 246,
+      "name": "Gilded Guardian Mk.XI",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/NightAye/NightAye11.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 247,
+      "name": "Drift Raider Mk.XII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/NightAye/NightAye12.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 248,
+      "name": "Phantom Voyager Mk.XIII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/NightAye/NightAye13.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 249,
+      "name": "Viper Storm Mk.XIV",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/NightAye/NightAye14.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 250,
+      "name": "Pulse Titan Mk.XV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/NightAye/NightAye15.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 251,
+      "name": "Gilded Fury Mk.XVI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/NightAye/NightAye16.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 252,
+      "name": "Obsidian Valkyrie Mk.XVII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/NightAye/NightAye17.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 253,
+      "name": "Zenith Blade Mk.XVIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/NightAye/NightAye18.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 254,
+      "name": "Astral Vanguard Mk.XIX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/NightAye/NightAye19.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 255,
+      "name": "Jade Herald Mk.XX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/NightAye/NightAye20.glb",
+      "textureGroup": 11
+    },
+    {
+      "id": 256,
+      "name": "Nova Raider Mk.I",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/ProtonLegacy/ProtonLegacy1.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 257,
+      "name": "Photon Chimera Mk.II",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/ProtonLegacy/ProtonLegacy2.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 258,
+      "name": "Iron Pegasus Mk.III",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/ProtonLegacy/ProtonLegacy3.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 259,
+      "name": "Fury Spectre Mk.IV",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/ProtonLegacy/ProtonLegacy4.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 260,
+      "name": "Viper Talon Mk.V",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/ProtonLegacy/ProtonLegacy5.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 261,
+      "name": "Saber Comet Mk.VI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/ProtonLegacy/ProtonLegacy6.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 262,
+      "name": "Iron Phantom Mk.VII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/ProtonLegacy/ProtonLegacy7.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 263,
+      "name": "Ember Predator Mk.VIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/ProtonLegacy/ProtonLegacy8.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 264,
+      "name": "Dark Pioneer Mk.IX",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/ProtonLegacy/ProtonLegacy9.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 265,
+      "name": "Jade Seeker Mk.X",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/ProtonLegacy/ProtonLegacy10.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 266,
+      "name": "Chaos Lancer Mk.XI",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/ProtonLegacy/ProtonLegacy11.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 267,
+      "name": "Ember Drifter Mk.XII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/ProtonLegacy/ProtonLegacy12.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 268,
+      "name": "Titan Herald Mk.XIII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/ProtonLegacy/ProtonLegacy13.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 269,
+      "name": "Solar Raider Mk.XIV",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/ProtonLegacy/ProtonLegacy14.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 270,
+      "name": "Gilded Pegasus Mk.XV",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/ProtonLegacy/ProtonLegacy15.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 271,
+      "name": "Prism Drifter Mk.XVI",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/ProtonLegacy/ProtonLegacy16.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 272,
+      "name": "Blaze Cruiser Mk.XVII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/ProtonLegacy/ProtonLegacy17.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 273,
+      "name": "Wraith Blade Mk.XVIII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/ProtonLegacy/ProtonLegacy18.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 274,
+      "name": "Fury Lancer Mk.XIX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/ProtonLegacy/ProtonLegacy19.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 275,
+      "name": "Comet Guardian Mk.XX",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/ProtonLegacy/ProtonLegacy20.glb",
+      "textureGroup": 12
+    },
+    {
+      "id": 276,
+      "name": "Onyx Runner Mk.I",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur1.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 277,
+      "name": "Nebula Guardian Mk.II",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur2.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 278,
+      "name": "Photon Valkyrie Mk.III",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur3.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 279,
+      "name": "Nova Pioneer Mk.IV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur4.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 280,
+      "name": "Obsidian Sentinel Mk.V",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur5.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 281,
+      "name": "Thunder Vanguard Mk.VI",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur6.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 282,
+      "name": "Delta Phantom Mk.VII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur7.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 283,
+      "name": "Hyper Titan Mk.VIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur8.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 284,
+      "name": "Fury Voyager Mk.IX",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur9.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 285,
+      "name": "Ghost Corsair Mk.X",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur10.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 286,
+      "name": "Photon Voyager Mk.XI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur11.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 287,
+      "name": "Dark Striker Mk.XII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur12.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 288,
+      "name": "Cobalt Wing Mk.XIII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur13.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 289,
+      "name": "Shadow Avenger Mk.XIV",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur14.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 290,
+      "name": "Raven Talon Mk.XV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur15.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 291,
+      "name": "Frost Arrow Mk.XVI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur16.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 292,
+      "name": "Wraith Guardian Mk.XVII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur17.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 293,
+      "name": "Blaze Interceptor Mk.XVIII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur18.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 294,
+      "name": "Quantum Stalker Mk.XIX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur19.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 295,
+      "name": "Thunder Hawk Mk.XX",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/SpaceExcalibur/SpaceExcalibur20.glb",
+      "textureGroup": 13
+    },
+    {
+      "id": 296,
+      "name": "Wraith Guardian Mk.I",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/SpaceSphinx/SpaceSphinx1.glb",
+      "textureGroup": 14
+    },
+    {
+      "id": 297,
+      "name": "Wraith Vanguard Mk.II",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/SpaceSphinx/SpaceSphinx2.glb",
+      "textureGroup": 14
+    },
+    {
+      "id": 298,
+      "name": "Eclipse Spectre Mk.III",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/SpaceSphinx/SpaceSphinx3.glb",
+      "textureGroup": 14
+    },
+    {
+      "id": 299,
+      "name": "Frost Comet Mk.IV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/SpaceSphinx/SpaceSphinx4.glb",
+      "textureGroup": 14
+    },
+    {
+      "id": 300,
+      "name": "Blaze Reaper Mk.V",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/SpaceSphinx/SpaceSphinx5.glb",
+      "textureGroup": 14
+    },
+    {
+      "id": 301,
+      "name": "Gilded Ravager Mk.VI",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/SpaceSphinx/SpaceSphinx6.glb",
+      "textureGroup": 14
+    },
+    {
+      "id": 302,
+      "name": "Titan Serpent Mk.VII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/SpaceSphinx/SpaceSphinx7.glb",
+      "textureGroup": 14
+    },
+    {
+      "id": 303,
+      "name": "Prism Stalker Mk.VIII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/SpaceSphinx/SpaceSphinx8.glb",
+      "textureGroup": 14
+    },
+    {
+      "id": 304,
+      "name": "Nova Sentinel Mk.I",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/StarForce/StarForce1.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 305,
+      "name": "Cobalt Stalker Mk.II",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/StarForce/StarForce2.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 306,
+      "name": "Saber Comet Mk.III",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/StarForce/StarForce3.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 307,
+      "name": "Neon Charger Mk.IV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/StarForce/StarForce4.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 308,
+      "name": "Storm Voyager Mk.V",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/StarForce/StarForce5.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 309,
+      "name": "Raven Vanguard Mk.VI",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/StarForce/StarForce6.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 310,
+      "name": "Delta Phoenix Mk.VII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/StarForce/StarForce7.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 311,
+      "name": "Blaze Ghost Mk.VIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/StarForce/StarForce8.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 312,
+      "name": "Jade Seeker Mk.IX",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/StarForce/StarForce9.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 313,
+      "name": "Nebula Pegasus Mk.X",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/StarForce/StarForce10.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 314,
+      "name": "Titan Monarch Mk.XI",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/StarForce/StarForce11.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 315,
+      "name": "Chaos Drifter Mk.XII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/StarForce/StarForce12.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 316,
+      "name": "Zenith Monarch Mk.XIII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/StarForce/StarForce13.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 317,
+      "name": "Plasma Breaker Mk.XIV",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/StarForce/StarForce14.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 318,
+      "name": "Gilded Monarch Mk.XV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/StarForce/StarForce15.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 319,
+      "name": "Phantom Wing Mk.XVI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/StarForce/StarForce16.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 320,
+      "name": "Void Drifter Mk.XVII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/StarForce/StarForce17.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 321,
+      "name": "Photon Reaper Mk.XVIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/StarForce/StarForce18.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 322,
+      "name": "Quantum Interceptor Mk.XIX",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/StarForce/StarForce19.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 323,
+      "name": "Prism Pegasus Mk.XX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/StarForce/StarForce20.glb",
+      "textureGroup": 15
+    },
+    {
+      "id": 324,
+      "name": "Astral Blade Mk.I",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/StarSparrow/StarSparrow1.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 325,
+      "name": "Omega Titan Mk.II",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/StarSparrow/StarSparrow2.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 326,
+      "name": "Frost Spectre Mk.III",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/StarSparrow/StarSparrow3.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 327,
+      "name": "Raven Monarch Mk.IV",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/StarSparrow/StarSparrow4.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 328,
+      "name": "Obsidian Valkyrie Mk.V",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/StarSparrow/StarSparrow5.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 329,
+      "name": "Photon Pegasus Mk.VI",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/StarSparrow/StarSparrow6.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 330,
+      "name": "Iron Voyager Mk.VII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/StarSparrow/StarSparrow7.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 331,
+      "name": "Eclipse Monarch Mk.VIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/StarSparrow/StarSparrow8.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 332,
+      "name": "Obsidian Pioneer Mk.IX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/StarSparrow/StarSparrow9.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 333,
+      "name": "Silver Stalker Mk.X",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/StarSparrow/StarSparrow10.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 334,
+      "name": "Storm Interceptor Mk.XI",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/StarSparrow/StarSparrow11.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 335,
+      "name": "Comet Predator Mk.XII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/StarSparrow/StarSparrow12.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 336,
+      "name": "Photon Striker Mk.XIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/StarSparrow/StarSparrow13.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 337,
+      "name": "Wraith Vanguard Mk.XIV",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/StarSparrow/StarSparrow14.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 338,
+      "name": "Cosmic Phantom Mk.XV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/StarSparrow/StarSparrow15.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 339,
+      "name": "Cosmic Raider Mk.XVI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/StarSparrow/StarSparrow16.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 340,
+      "name": "Plasma Monarch Mk.XVII",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/StarSparrow/StarSparrow17.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 341,
+      "name": "Obsidian Pegasus Mk.XVIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/StarSparrow/StarSparrow18.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 342,
+      "name": "Fury Runner Mk.XIX",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/StarSparrow/StarSparrow19.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 343,
+      "name": "Eclipse Voyager Mk.XX",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/StarSparrow/StarSparrow20.glb",
+      "textureGroup": 16
+    },
+    {
+      "id": 344,
+      "name": "Hyper Hawk Mk.I",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/StriderOx/StriderOx1.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 345,
+      "name": "Titan Guardian Mk.II",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/StriderOx/StriderOx2.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 346,
+      "name": "Neon Ravager Mk.III",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/StriderOx/StriderOx3.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 347,
+      "name": "Thunder Corsair Mk.IV",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/StriderOx/StriderOx4.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 348,
+      "name": "Obsidian Ranger Mk.V",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/StriderOx/StriderOx5.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 349,
+      "name": "Ivory Warden Mk.VI",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/StriderOx/StriderOx6.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 350,
+      "name": "Raven Fang Mk.VII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 9,
+      "glb": "ships/StriderOx/StriderOx7.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 351,
+      "name": "Azure Pegasus Mk.VIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/StriderOx/StriderOx8.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 352,
+      "name": "Hyper Breaker Mk.IX",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/StriderOx/StriderOx9.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 353,
+      "name": "Shadow Ghost Mk.X",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/StriderOx/StriderOx10.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 354,
+      "name": "Raven Hunter Mk.XI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/StriderOx/StriderOx11.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 355,
+      "name": "Stealth Stalker Mk.XII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/StriderOx/StriderOx12.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 356,
+      "name": "Storm Pegasus Mk.XIII",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/StriderOx/StriderOx13.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 357,
+      "name": "Void Titan Mk.XIV",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/StriderOx/StriderOx14.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 358,
+      "name": "Drift Raider Mk.XV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/StriderOx/StriderOx15.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 359,
+      "name": "Fury Pioneer Mk.XVI",
+      "rarity": "epic",
+      "blackholeMultiplicator": 7,
+      "glb": "ships/StriderOx/StriderOx16.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 360,
+      "name": "Saber Guardian Mk.XVII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/StriderOx/StriderOx17.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 361,
+      "name": "Nova Drifter Mk.XVIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/StriderOx/StriderOx18.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 362,
+      "name": "Dark Runner Mk.XIX",
+      "rarity": "common",
+      "blackholeMultiplicator": 2,
+      "glb": "ships/StriderOx/StriderOx19.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 363,
+      "name": "Neon Stalker Mk.XX",
+      "rarity": "common",
+      "blackholeMultiplicator": 3,
+      "glb": "ships/StriderOx/StriderOx20.glb",
+      "textureGroup": 17
+    },
+    {
+      "id": 364,
+      "name": "Onyx Chimera Mk.I",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/VoidWhale/VoidWhale1.glb",
+      "textureGroup": 18
+    },
+    {
+      "id": 365,
+      "name": "Stealth Comet Mk.II",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/VoidWhale/VoidWhale2.glb",
+      "textureGroup": 18
+    },
+    {
+      "id": 366,
+      "name": "Storm Lancer Mk.III",
+      "rarity": "rare",
+      "blackholeMultiplicator": 6,
+      "glb": "ships/VoidWhale/VoidWhale3.glb",
+      "textureGroup": 18
+    },
+    {
+      "id": 367,
+      "name": "Wraith Drifter Mk.IV",
+      "rarity": "rare",
+      "blackholeMultiplicator": 5,
+      "glb": "ships/VoidWhale/VoidWhale4.glb",
+      "textureGroup": 18
+    },
+    {
+      "id": 368,
+      "name": "Ghost Voyager Mk.V",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/VoidWhale/VoidWhale5.glb",
+      "textureGroup": 18
+    },
+    {
+      "id": 369,
+      "name": "Hyper Runner Mk.VI",
+      "rarity": "rare",
+      "blackholeMultiplicator": 4,
+      "glb": "ships/VoidWhale/VoidWhale6.glb",
+      "textureGroup": 18
+    },
+    {
+      "id": 370,
+      "name": "Chaos Phoenix Mk.VII",
+      "rarity": "epic",
+      "blackholeMultiplicator": 8,
+      "glb": "ships/VoidWhale/VoidWhale7.glb",
+      "textureGroup": 18
+    },
+    {
+      "id": 371,
+      "name": "Silver Talon Mk.VIII",
+      "rarity": "common",
+      "blackholeMultiplicator": 1,
+      "glb": "ships/VoidWhale/VoidWhale8.glb",
+      "textureGroup": 18
+    },
+    {
+      "id": 372,
+      "name": "Solar Valkyrie Mk.IX",
+      "rarity": "legendary",
+      "blackholeMultiplicator": 10,
+      "glb": "ships/VoidWhale/VoidWhale9.glb",
+      "textureGroup": 18
+    }
   ]
 }

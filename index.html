@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>Star Sparrow Fleet</title>
+  <title>Ultimate Spaceships Fleet</title>
   <script>
     if (window.TelegramWebviewProxy || navigator.userAgent.includes('Telegram')) {
       var s = document.createElement('script');
@@ -39,38 +39,73 @@
       filter: grayscale(1) brightness(0.7);
     }
 
+    /* --- Top HUD: ship name + rarity --- */
     #ship-label {
       position: fixed; top: calc(16px + env(safe-area-inset-top, 0px)); left: 50%; transform: translateX(-50%);
-      background: rgba(10, 22, 40, 0.8); color: #c0d0e8; padding: 8px 18px;
+      background: rgba(10, 22, 40, 0.85); color: #c0d0e8; padding: 10px 22px;
       border-radius: 16px; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase;
       z-index: 10; pointer-events: none; white-space: nowrap;
       border: 1px solid rgba(100, 140, 200, 0.25);
-      text-align: center; line-height: 1.5;
-      transition: border-color 0.4s, box-shadow 0.4s;
+      text-align: center; line-height: 1.6;
+      transition: border-color 0.5s, box-shadow 0.5s;
     }
     #ship-label[data-rarity="common"]    { border-color: rgba(176, 176, 176, 0.4); }
-    #ship-label[data-rarity="rare"]      { border-color: rgba(74, 158, 255, 0.5); }
-    #ship-label[data-rarity="epic"]      { border-color: rgba(180, 74, 255, 0.5); box-shadow: 0 0 12px rgba(180, 74, 255, 0.2); }
-    #ship-label[data-rarity="legendary"] { border-color: rgba(255, 154, 0, 0.6); box-shadow: 0 0 16px rgba(255, 154, 0, 0.3); }
+    #ship-label[data-rarity="rare"]      { border-color: rgba(74, 158, 255, 0.5); box-shadow: 0 0 10px rgba(74, 158, 255, 0.15); }
+    #ship-label[data-rarity="epic"]      { border-color: rgba(180, 74, 255, 0.5); box-shadow: 0 0 14px rgba(180, 74, 255, 0.25); }
+    #ship-label[data-rarity="legendary"] { border-color: rgba(255, 154, 0, 0.6); box-shadow: 0 0 20px rgba(255, 154, 0, 0.3); }
 
-    #ship-name { transition: color 0.4s; }
+    #ship-name { font-size: 15px; font-weight: 600; transition: color 0.4s; }
     #ship-label[data-rarity="common"]    #ship-name { color: #b0b0b0; }
     #ship-label[data-rarity="rare"]      #ship-name { color: #4a9eff; }
     #ship-label[data-rarity="epic"]      #ship-name { color: #b44aff; }
     #ship-label[data-rarity="legendary"] #ship-name { color: #ff9a00; }
 
-    #ship-rarity {
-      font-size: 10px; letter-spacing: 2px; font-weight: 600;
-    }
-    #ship-label[data-rarity="common"]    #ship-rarity { color: #b0b0b0; }
+    #ship-rarity { font-size: 10px; letter-spacing: 2.5px; font-weight: 700; }
+    #ship-label[data-rarity="common"]    #ship-rarity { color: #888; }
     #ship-label[data-rarity="rare"]      #ship-rarity { color: #4a9eff; }
     #ship-label[data-rarity="epic"]      #ship-rarity { color: #b44aff; }
     #ship-label[data-rarity="legendary"] #ship-rarity { color: #ff9a00; }
 
-    #ship-mult {
-      font-size: 11px; letter-spacing: 1px; color: rgba(160, 190, 230, 0.6);
+    #ship-counter {
+      font-size: 10px; letter-spacing: 1px; color: rgba(160, 190, 230, 0.4);
     }
 
+    /* --- Blackhole Multiplicator Badge --- */
+    #bh-badge {
+      position: fixed; z-index: 10; pointer-events: none;
+      top: calc(100px + env(safe-area-inset-top, 0px)); left: 50%; transform: translateX(-50%);
+      display: flex; align-items: center; gap: 8px;
+      background: rgba(0, 0, 0, 0.5); padding: 8px 18px;
+      border-radius: 20px; border: 1px solid rgba(160, 100, 255, 0.3);
+      transition: border-color 0.4s, box-shadow 0.4s;
+    }
+    #bh-badge[data-rarity="common"]    { border-color: rgba(176, 176, 176, 0.2); }
+    #bh-badge[data-rarity="rare"]      { border-color: rgba(74, 158, 255, 0.3); }
+    #bh-badge[data-rarity="epic"]      { border-color: rgba(180, 74, 255, 0.4); box-shadow: 0 0 12px rgba(180, 74, 255, 0.15); }
+    #bh-badge[data-rarity="legendary"] { border-color: rgba(255, 154, 0, 0.5); box-shadow: 0 0 16px rgba(255, 154, 0, 0.2); }
+
+    #bh-icon {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: radial-gradient(circle, #1a0a30 30%, #6b2fa0 70%, #a855f7 100%);
+      box-shadow: 0 0 10px rgba(168, 85, 247, 0.4), inset 0 0 6px rgba(0,0,0,0.6);
+      position: relative;
+    }
+    #bh-icon::after {
+      content: ''; position: absolute; inset: 3px; border-radius: 50%;
+      background: radial-gradient(circle, #000 40%, transparent 70%);
+    }
+    #bh-label {
+      font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+      color: rgba(180, 160, 220, 0.7);
+    }
+    #bh-value {
+      font-size: 22px; font-weight: 800; letter-spacing: 1px;
+      background: linear-gradient(135deg, #a855f7, #c084fc, #e9d5ff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* --- Lock overlay --- */
     #lock-overlay {
       position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
       z-index: 10; cursor: pointer;
@@ -88,6 +123,7 @@
       color: rgba(160, 190, 230, 0.7); font-size: 12px; letter-spacing: 1px; text-transform: uppercase;
     }
 
+    /* --- Skin bar --- */
     #skin-bar {
       position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
       display: flex; align-items: center; gap: 10px;
@@ -106,23 +142,20 @@
     }
     .skin-circle.selected { border-color: #ffffff; }
     .skin-circle:active { transform: scale(0.88); }
-    .skin-circle.skin-locked {
-      opacity: 0.4; position: relative;
-    }
+    .skin-circle.skin-locked { opacity: 0.4; position: relative; }
     .skin-circle.skin-locked::after {
       content: '';
       position: absolute; inset: 0; border-radius: 50%;
       background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(255,255,255,0.8)'%3E%3Cpath d='M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM12 17c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z'/%3E%3C/svg%3E") center/18px no-repeat;
     }
-    .skin-circle.skin-unlocking {
-      animation: skinUnlock 0.4s ease-out;
-    }
+    .skin-circle.skin-unlocking { animation: skinUnlock 0.4s ease-out; }
     @keyframes skinUnlock {
       0% { transform: scale(0.88); opacity: 0.4; }
       50% { transform: scale(1.15); opacity: 0.8; }
       100% { transform: scale(1); opacity: 1; }
     }
 
+    /* --- Misc --- */
     #swipe-hint {
       position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%);
       color: rgba(160, 190, 230, 0.6); font-size: 13px; letter-spacing: 1px;
@@ -167,8 +200,16 @@
 
   <div id="ship-label">
     <div id="ship-rarity"></div>
-    <div id="ship-name">Ship 1 / 20</div>
-    <div id="ship-mult"></div>
+    <div id="ship-name">Loading...</div>
+    <div id="ship-counter"></div>
+  </div>
+
+  <div id="bh-badge">
+    <div id="bh-icon"></div>
+    <div>
+      <div id="bh-label">Blackhole</div>
+      <div id="bh-value">x1</div>
+    </div>
   </div>
 
   <div id="lock-overlay" class="hidden">
@@ -196,34 +237,55 @@
     import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
     import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 
-    // --- Ship & Skin Data (loaded from external JSON) ---
+    // --- Data ---
     let SHIPS = [];
-    let SKINS = [];
-    let SHIP_COUNT = 20;
-    const TEX = './Textures/';
+    let TEX_GROUPS = [];
 
     async function loadShipData() {
       const resp = await fetch('./ships.json');
       const data = await resp.json();
-      SKINS = data.skins.map(s => ({ ...s, file: TEX + s.file }));
       SHIPS = data.ships;
-      SHIP_COUNT = SHIPS.length;
+      TEX_GROUPS = data.textureGroups;
     }
 
     // --- State ---
-    let currentShipIndex = 0;
+    let currentIndex = 0;
     let currentModel = null;
     let isTransitioning = false;
-    const unlocked = new Array(SHIP_COUNT).fill(false);
-    unlocked[0] = true;
-    const shipSkins = new Array(SHIP_COUNT).fill(0);
-    // Global skin unlock state
-    const skinUnlocked = new Set([0]);
+    const unlockedShips = new Set([0]);
+    const shipSkinIndex = {};             // shipId -> skinIndex
+    const skinUnlockedPerGroup = {};      // groupIndex -> Set of skin indices
 
     function initSkinUnlocks() {
-      skinUnlocked.clear();
-      SKINS.forEach((s, i) => { if (s.unlocked) skinUnlocked.add(i); });
+      TEX_GROUPS.forEach((tg, gi) => {
+        const unlocked = new Set();
+        tg.skins.forEach((sk, i) => { if (sk.unlocked) unlocked.add(i); });
+        skinUnlockedPerGroup[gi] = unlocked;
+      });
     }
+
+    function getTexGroup(shipIdx) { return TEX_GROUPS[SHIPS[shipIdx].textureGroup]; }
+    function getSkinIdx(shipIdx) { return shipSkinIndex[shipIdx] || 0; }
+
+    // --- Rarity background colors (passed to shader) ---
+    const RARITY_BG = {
+      common:    { r: 0.004, g: 0.006, b: 0.020 },  // neutral dark blue
+      rare:      { r: 0.006, g: 0.012, b: 0.040 },  // blue tint
+      epic:      { r: 0.018, g: 0.006, b: 0.040 },  // purple tint
+      legendary: { r: 0.030, g: 0.016, b: 0.005 },  // warm orange tint
+    };
+    const RARITY_BG2 = {
+      common:    { r: 0.008, g: 0.012, b: 0.030 },
+      rare:      { r: 0.010, g: 0.020, b: 0.060 },
+      epic:      { r: 0.030, g: 0.010, b: 0.060 },
+      legendary: { r: 0.050, g: 0.030, b: 0.010 },
+    };
+    const RARITY_NEBULA = {
+      common:    { r: 0.025, g: 0.008, b: 0.040 },
+      rare:      { r: 0.010, g: 0.020, b: 0.060 },
+      epic:      { r: 0.050, g: 0.010, b: 0.070 },
+      legendary: { r: 0.060, g: 0.030, b: 0.010 },
+    };
 
     // --- Renderer ---
     const canvas = document.getElementById('viewer');
@@ -236,12 +298,10 @@
 
     // --- Scene & Camera ---
     const scene = new THREE.Scene();
-
     const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
-    // Default: 30deg azimuth (Y), 30deg elevation (X)
     const CAM_DIST = 6;
+    const DEF_POLAR = THREE.MathUtils.degToRad(60);
     const DEF_AZIMUTH = THREE.MathUtils.degToRad(30);
-    const DEF_POLAR = THREE.MathUtils.degToRad(60); // 90-30 = 60 from top
     const defCamPos = new THREE.Vector3(
       CAM_DIST * Math.sin(DEF_POLAR) * Math.sin(DEF_AZIMUTH),
       CAM_DIST * Math.cos(DEF_POLAR),
@@ -249,93 +309,65 @@
     );
     camera.position.copy(defCamPos);
 
-    // --- Starfield Background ---
+    // --- Starfield with rarity-tinted background ---
     const starsBg = new THREE.Mesh(
       new THREE.PlaneGeometry(2, 2),
       new THREE.ShaderMaterial({
-        depthWrite: false,
-        depthTest: false,
+        depthWrite: false, depthTest: false,
         uniforms: {
           uResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
           uTime: { value: 0 },
+          uBgLow:  { value: new THREE.Vector3(0.004, 0.006, 0.020) },
+          uBgHigh: { value: new THREE.Vector3(0.008, 0.012, 0.030) },
+          uNebula: { value: new THREE.Vector3(0.025, 0.008, 0.040) },
         },
-        vertexShader: `
-          void main() {
-            gl_Position = vec4(position.xy, 0.999, 1.0);
-          }
-        `,
+        vertexShader: `void main() { gl_Position = vec4(position.xy, 0.999, 1.0); }`,
         fragmentShader: `
           uniform vec2 uResolution;
           uniform float uTime;
+          uniform vec3 uBgLow;
+          uniform vec3 uBgHigh;
+          uniform vec3 uNebula;
 
-          float hash(vec2 p) {
-            return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
-          }
-
+          float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
           float smoothNoise(vec2 p) {
-            vec2 i = floor(p);
-            vec2 f = fract(p);
+            vec2 i = floor(p); vec2 f = fract(p);
             f = f * f * (3.0 - 2.0 * f);
-            float a = hash(i);
-            float b = hash(i + vec2(1.0, 0.0));
-            float c = hash(i + vec2(0.0, 1.0));
-            float d = hash(i + vec2(1.0, 1.0));
-            return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+            float a = hash(i), b = hash(i + vec2(1,0)), c = hash(i + vec2(0,1)), d = hash(i + vec2(1,1));
+            return mix(mix(a,b,f.x), mix(c,d,f.x), f.y);
           }
-
           void main() {
             vec2 uv = gl_FragCoord.xy / uResolution;
+            vec3 bg = mix(uBgLow, uBgHigh, uv.y);
 
-            // dark blue gradient background
-            vec3 bg = mix(vec3(0.004, 0.006, 0.02), vec3(0.008, 0.012, 0.03), uv.y);
+            float n1 = smoothNoise(uv*3.0), n2 = smoothNoise(uv*5.0+7.0), n3 = smoothNoise(uv*8.0+13.0);
+            float nebula = n1*0.5 + n2*0.3 + n3*0.2;
 
-            // nebula clouds — smooth noise, no grid artifacts
-            float n1 = smoothNoise(uv * 3.0);
-            float n2 = smoothNoise(uv * 5.0 + 7.0);
-            float n3 = smoothNoise(uv * 8.0 + 13.0);
-            float nebula = n1 * 0.5 + n2 * 0.3 + n3 * 0.2;
-
-            // purple nebula band — sweeps across mid-screen
-            float band1 = smoothstep(0.2, 0.45, uv.y) * smoothstep(0.7, 0.45, uv.y);
-            bg += vec3(0.025, 0.008, 0.04) * band1 * nebula;
-
-            // secondary violet wisp — upper area
-            float band2 = smoothstep(0.55, 0.75, uv.y) * smoothstep(0.95, 0.75, uv.y);
-            bg += vec3(0.015, 0.005, 0.03) * band2 * n2;
-
-            // faint magenta accent — lower
-            float band3 = smoothstep(0.0, 0.2, uv.y) * smoothstep(0.4, 0.2, uv.y);
-            bg += vec3(0.018, 0.004, 0.025) * band3 * n3;
+            float band1 = smoothstep(0.2,0.45,uv.y)*smoothstep(0.7,0.45,uv.y);
+            bg += uNebula * band1 * nebula;
+            float band2 = smoothstep(0.55,0.75,uv.y)*smoothstep(0.95,0.75,uv.y);
+            bg += uNebula * 0.6 * band2 * n2;
+            float band3 = smoothstep(0.0,0.2,uv.y)*smoothstep(0.4,0.2,uv.y);
+            bg += uNebula * 0.7 * band3 * n3;
 
             vec3 col = bg;
-
-            // star layers
             for (float layer = 0.0; layer < 2.0; layer++) {
-              float density = 80.0 + layer * 60.0;
-              float brightness = 1.0 - layer * 0.3;
-              float sizeRange = 1.2 - layer * 0.3;
-
-              vec2 grid = floor(uv * density);
-              vec2 f = fract(uv * density);
-
-              float r = hash(grid + layer * 100.0);
+              float density = 80.0 + layer*60.0;
+              float brightness = 1.0 - layer*0.3;
+              float sizeRange = 1.2 - layer*0.3;
+              vec2 grid = floor(uv*density); vec2 f = fract(uv*density);
+              float r = hash(grid + layer*100.0);
               if (r > 0.92) {
-                vec2 starPos = vec2(hash(grid * 1.3 + layer), hash(grid * 2.7 + layer));
+                vec2 starPos = vec2(hash(grid*1.3+layer), hash(grid*2.7+layer));
                 float d = length(f - starPos);
-                float size = (0.3 + hash(grid + 50.0) * sizeRange) * 0.08;
-
+                float size = (0.3 + hash(grid+50.0)*sizeRange)*0.08;
                 float star = smoothstep(size, 0.0, d);
-
-                // twinkle
-                float twinkle = sin(uTime * (1.5 + hash(grid) * 3.0) + hash(grid) * 6.28) * 0.4 + 0.6;
+                float twinkle = sin(uTime*(1.5+hash(grid)*3.0)+hash(grid)*6.28)*0.4+0.6;
                 star *= twinkle * brightness;
-
-                // slight color variation
-                vec3 starCol = mix(vec3(0.8, 0.85, 1.0), vec3(1.0, 0.9, 0.7), hash(grid * 3.1));
+                vec3 starCol = mix(vec3(0.8,0.85,1.0), vec3(1.0,0.9,0.7), hash(grid*3.1));
                 col += starCol * star;
               }
             }
-
             gl_FragColor = vec4(col, 1.0);
           }
         `,
@@ -344,6 +376,20 @@
     starsBg.frustumCulled = false;
     starsBg.renderOrder = -1;
     scene.add(starsBg);
+
+    // Smoothly transition bg colors
+    let targetBgLow = new THREE.Vector3(0.004, 0.006, 0.020);
+    let targetBgHigh = new THREE.Vector3(0.008, 0.012, 0.030);
+    let targetNebula = new THREE.Vector3(0.025, 0.008, 0.040);
+
+    function setRarityBackground(rarity) {
+      const bg1 = RARITY_BG[rarity] || RARITY_BG.common;
+      const bg2 = RARITY_BG2[rarity] || RARITY_BG2.common;
+      const neb = RARITY_NEBULA[rarity] || RARITY_NEBULA.common;
+      targetBgLow.set(bg1.r, bg1.g, bg1.b);
+      targetBgHigh.set(bg2.r, bg2.g, bg2.b);
+      targetNebula.set(neb.r, neb.g, neb.b);
+    }
 
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -355,69 +401,48 @@
 
     // --- Lighting ---
     scene.add(new THREE.AmbientLight(0x283848, 0.6));
-
-    // Strong key light — top-right, warm
     const keyLight = new THREE.DirectionalLight(0xffeedd, 2.5);
-    keyLight.position.set(4, 6, 3);
-    scene.add(keyLight);
-
-    // Cool fill — opposite side
+    keyLight.position.set(4, 6, 3); scene.add(keyLight);
     const fillLight = new THREE.DirectionalLight(0x4466aa, 0.5);
-    fillLight.position.set(-4, 1, -3);
-    scene.add(fillLight);
-
-    // Bright rim/back light — edge highlights
+    fillLight.position.set(-4, 1, -3); scene.add(fillLight);
     const rimLight = new THREE.DirectionalLight(0x6688cc, 1.2);
-    rimLight.position.set(-2, 3, -5);
-    scene.add(rimLight);
-
-    // Bottom light — illuminate underside
+    rimLight.position.set(-2, 3, -5); scene.add(rimLight);
     const bottomLight = new THREE.DirectionalLight(0x446688, 0.8);
-    bottomLight.position.set(0, -5, 2);
-    scene.add(bottomLight);
+    bottomLight.position.set(0, -5, 2); scene.add(bottomLight);
 
-    // --- Environment Map (needed for metallic surfaces) ---
+    // --- Environment Map ---
     const pmremGenerator = new THREE.PMREMGenerator(renderer);
     const envScene = new THREE.Scene();
     envScene.add(new THREE.HemisphereLight(0x2244aa, 0x080810, 1.5));
     const envDirLight = new THREE.DirectionalLight(0xffeedd, 0.8);
-    envDirLight.position.set(3, 5, 4);
-    envScene.add(envDirLight);
+    envDirLight.position.set(3, 5, 4); envScene.add(envDirLight);
     scene.environment = pmremGenerator.fromScene(envScene).texture;
     pmremGenerator.dispose();
 
     // --- Controls ---
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true;
-    controls.dampingFactor = 0.08;
-    controls.enablePan = false;
-    controls.enableZoom = false;
+    controls.enableDamping = true; controls.dampingFactor = 0.08;
+    controls.enablePan = false; controls.enableZoom = false;
     controls.autoRotate = false;
     controls.minPolarAngle = Math.PI * 0.2;
     controls.maxPolarAngle = Math.PI * 0.8;
 
-    // --- Bloom Post-Processing ---
+    // --- Bloom ---
     const composer = new EffectComposer(renderer);
     composer.addPass(new RenderPass(scene, camera));
-
     const bloomPass = new UnrealBloomPass(
-      new THREE.Vector2(window.innerWidth / 4, window.innerHeight / 4),
-      0.8,   // strength
-      0.3,   // radius
-      0.4    // threshold
+      new THREE.Vector2(window.innerWidth / 4, window.innerHeight / 4), 0.8, 0.3, 0.4
     );
     composer.addPass(bloomPass);
-    // Auto-return to default view
+
     let lastInteraction = 0;
-    let isReturning = false;
-    canvas.addEventListener('pointerdown', () => { lastInteraction = performance.now(); isReturning = false; });
+    canvas.addEventListener('pointerdown', () => { lastInteraction = performance.now(); });
     canvas.addEventListener('pointerup', () => { lastInteraction = performance.now(); });
 
     // --- Engine Exhaust ---
     const ENGINE_PARTICLE_COUNT = 20;
     const engineGroup = new THREE.Group();
     scene.add(engineGroup);
-
     const exhaustGeo = new THREE.BufferGeometry();
     const exhaustPositions = new Float32Array(ENGINE_PARTICLE_COUNT * 3);
     const exhaustVelocities = new Float32Array(ENGINE_PARTICLE_COUNT);
@@ -425,21 +450,14 @@
     const exhaustSizes = new Float32Array(ENGINE_PARTICLE_COUNT);
     let engineOffsets = [{ x: 0, y: 0, z: -1.2 }];
 
-    for (let i = 0; i < ENGINE_PARTICLE_COUNT; i++) {
-      resetParticle(i);
-    }
-
+    for (let i = 0; i < ENGINE_PARTICLE_COUNT; i++) resetParticle(i);
     exhaustGeo.setAttribute('position', new THREE.BufferAttribute(exhaustPositions, 3));
     exhaustGeo.setAttribute('size', new THREE.BufferAttribute(exhaustSizes, 1));
 
     const exhaustMat = new THREE.ShaderMaterial({
-      uniforms: {
-        uColor: { value: new THREE.Color(0.3, 0.6, 1.0) },
-        uTime: { value: 0 },
-      },
+      uniforms: { uColor: { value: new THREE.Color(0.3, 0.6, 1.0) }, uTime: { value: 0 } },
       vertexShader: `
-        attribute float size;
-        varying float vAlpha;
+        attribute float size; varying float vAlpha;
         void main() {
           vec4 mvPos = modelViewMatrix * vec4(position, 1.0);
           gl_PointSize = size * (100.0 / -mvPos.z);
@@ -448,79 +466,59 @@
         }
       `,
       fragmentShader: `
-        uniform vec3 uColor;
-        varying float vAlpha;
+        uniform vec3 uColor; varying float vAlpha;
         void main() {
           float d = length(gl_PointCoord - 0.5) * 2.0;
           float falloff = 1.0 - smoothstep(0.0, 1.0, d);
           gl_FragColor = vec4(uColor * 0.3, falloff * vAlpha * 0.15);
         }
       `,
-      transparent: true,
-      blending: THREE.AdditiveBlending,
-      depthWrite: false,
+      transparent: true, blending: THREE.AdditiveBlending, depthWrite: false,
     });
 
     const exhaustPoints = new THREE.Points(exhaustGeo, exhaustMat);
     engineGroup.add(exhaustPoints);
 
-    // Engine glow core sprite
     const glowCanvas = document.createElement('canvas');
     glowCanvas.width = 64; glowCanvas.height = 64;
     const gCtx = glowCanvas.getContext('2d');
-    const grad = gCtx.createRadialGradient(32, 32, 0, 32, 32, 32);
+    const grad = gCtx.createRadialGradient(32,32,0,32,32,32);
     grad.addColorStop(0, 'rgba(100,150,220,0.5)');
     grad.addColorStop(0.3, 'rgba(50,100,200,0.2)');
     grad.addColorStop(1, 'rgba(20,60,180,0)');
-    gCtx.fillStyle = grad;
-    gCtx.fillRect(0, 0, 64, 64);
+    gCtx.fillStyle = grad; gCtx.fillRect(0,0,64,64);
     const glowTexture = new THREE.CanvasTexture(glowCanvas);
 
-    const glowSprite = new THREE.Sprite(
-      new THREE.SpriteMaterial({
-        map: glowTexture,
-        blending: THREE.AdditiveBlending,
-        transparent: true,
-        depthWrite: false,
-        opacity: 0.06,
-        color: 0x5588ff,
-      })
-    );
+    const glowSprite = new THREE.Sprite(new THREE.SpriteMaterial({
+      map: glowTexture, blending: THREE.AdditiveBlending,
+      transparent: true, depthWrite: false, opacity: 0.06, color: 0x5588ff,
+    }));
     glowSprite.scale.set(0.3, 0.3, 1);
     engineGroup.add(glowSprite);
 
-    function updateEngineColor(skinIndex) {
-      const c = new THREE.Color(SKINS[skinIndex].color);
-      // Brighten and shift toward white for a hot-glow look
-      const r = c.r * 0.6 + 0.4;
-      const g = c.g * 0.6 + 0.4;
-      const b = c.b * 0.6 + 0.4;
-      exhaustMat.uniforms.uColor.value.set(r, g, b);
-      glowSprite.material.color.set(SKINS[skinIndex].color);
+    function updateEngineColor(hex) {
+      const c = new THREE.Color(hex);
+      exhaustMat.uniforms.uColor.value.set(c.r*0.6+0.4, c.g*0.6+0.4, c.b*0.6+0.4);
+      glowSprite.material.color.set(hex);
     }
 
     function resetParticle(i) {
-      const offset = engineOffsets[Math.floor(Math.random() * engineOffsets.length)];
-      const spread = 0.08;
-      exhaustPositions[i * 3]     = offset.x + (Math.random() - 0.5) * spread;
-      exhaustPositions[i * 3 + 1] = offset.y + (Math.random() - 0.5) * spread;
-      exhaustPositions[i * 3 + 2] = offset.z;
-      exhaustVelocities[i] = 0.02 + Math.random() * 0.03;
+      const o = engineOffsets[Math.floor(Math.random() * engineOffsets.length)];
+      exhaustPositions[i*3]     = o.x + (Math.random()-0.5)*0.08;
+      exhaustPositions[i*3 + 1] = o.y + (Math.random()-0.5)*0.08;
+      exhaustPositions[i*3 + 2] = o.z;
+      exhaustVelocities[i] = 0.02 + Math.random()*0.03;
       exhaustLifetimes[i] = Math.random();
-      exhaustSizes[i] = 3.0 + Math.random() * 5.0;
+      exhaustSizes[i] = 3.0 + Math.random()*5.0;
     }
 
     function updateExhaust(dt) {
       for (let i = 0; i < ENGINE_PARTICLE_COUNT; i++) {
         exhaustLifetimes[i] -= dt * 1.8;
-        if (exhaustLifetimes[i] <= 0) {
-          resetParticle(i);
-          continue;
-        }
-        exhaustPositions[i * 3 + 2] -= exhaustVelocities[i];
-        // spread outward as particles age
-        exhaustPositions[i * 3]     += (Math.random() - 0.5) * 0.003;
-        exhaustPositions[i * 3 + 1] += (Math.random() - 0.5) * 0.003;
+        if (exhaustLifetimes[i] <= 0) { resetParticle(i); continue; }
+        exhaustPositions[i*3 + 2] -= exhaustVelocities[i];
+        exhaustPositions[i*3]     += (Math.random()-0.5)*0.003;
+        exhaustPositions[i*3 + 1] += (Math.random()-0.5)*0.003;
         exhaustSizes[i] *= 0.995;
       }
       exhaustGeo.attributes.position.needsUpdate = true;
@@ -528,141 +526,126 @@
     }
 
     function positionEngine(model) {
-      // Estimate engine position: back-center of model bounding box
       const box = new THREE.Box3().setFromObject(model);
-      const center = new THREE.Vector3();
-      box.getCenter(center);
-      const zBack = box.min.z;
-      const yCenter = center.y;
-      engineOffsets = [{ x: 0, y: yCenter, z: zBack - 0.05 }];
-      glowSprite.position.set(0, yCenter, zBack);
-      // Reset all particles to new position
+      const center = new THREE.Vector3(); box.getCenter(center);
+      engineOffsets = [{ x: 0, y: center.y, z: box.min.z - 0.05 }];
+      glowSprite.position.set(0, center.y, box.min.z);
       for (let i = 0; i < ENGINE_PARTICLE_COUNT; i++) resetParticle(i);
     }
 
     // --- Texture Loading ---
     const textureLoader = new THREE.TextureLoader();
-    const skinTextureCache = {};
+    const textureCache = {};
 
     function loadTex(url, isSRGB) {
+      if (textureCache[url]) return textureCache[url];
       const tex = textureLoader.load(url);
       tex.flipY = false;
       tex.colorSpace = isSRGB ? THREE.SRGBColorSpace : THREE.LinearSRGBColorSpace;
+      textureCache[url] = tex;
       return tex;
     }
 
-    const normalTexture = loadTex(TEX + 'StarSparrow_Normal.png', false);
-    const emissionTexture = loadTex(TEX + 'StarSparrow_Emission.png', true);
-
-    // Remap Unity MetallicSmoothness (R=metallic, A=smoothness)
-    // to Three.js format (B=metallic, G=roughness=1-smoothness)
-    let metalnessTexture = null;
-    let roughnessTexture = null;
-    const msImg = new Image();
-    msImg.crossOrigin = '';
-    msImg.onload = () => {
-      const c = document.createElement('canvas');
-      c.width = msImg.width; c.height = msImg.height;
-      const ctx = c.getContext('2d');
-      ctx.drawImage(msImg, 0, 0);
-      const data = ctx.getImageData(0, 0, c.width, c.height);
-      const px = data.data;
-
-      const metalData = ctx.createImageData(c.width, c.height);
-      const roughData = ctx.createImageData(c.width, c.height);
-      const mPx = metalData.data;
-      const rPx = roughData.data;
-
-      for (let i = 0; i < px.length; i += 4) {
-        const metallic = px[i];           // R channel = metallic
-        const smoothness = px[i + 3];     // A channel = smoothness
-        const roughness = 255 - smoothness;
-        // metalness texture (store in all RGB so any channel read works)
-        mPx[i] = metallic; mPx[i+1] = metallic; mPx[i+2] = metallic; mPx[i+3] = 255;
-        // roughness texture
-        rPx[i] = roughness; rPx[i+1] = roughness; rPx[i+2] = roughness; rPx[i+3] = 255;
-      }
-
-      const mc = document.createElement('canvas'); mc.width = c.width; mc.height = c.height;
-      mc.getContext('2d').putImageData(metalData, 0, 0);
-      metalnessTexture = new THREE.CanvasTexture(mc);
-      metalnessTexture.flipY = false;
-      metalnessTexture.colorSpace = THREE.LinearSRGBColorSpace;
-
-      const rc = document.createElement('canvas'); rc.width = c.width; rc.height = c.height;
-      rc.getContext('2d').putImageData(roughData, 0, 0);
-      roughnessTexture = new THREE.CanvasTexture(rc);
-      roughnessTexture.flipY = false;
-      roughnessTexture.colorSpace = THREE.LinearSRGBColorSpace;
-
-      // Re-apply material to current model if already loaded
-      if (currentModel) applyMaterial(currentModel, shipSkins[currentShipIndex]);
-    };
-    msImg.src = TEX + 'StarSparrow_MetallicSmoothness.png';
-
-    function getSkinTexture(skinIndex) {
-      const key = SKINS[skinIndex].file;
-      if (!skinTextureCache[key]) {
-        skinTextureCache[key] = loadTex(key, true);
-      }
-      return skinTextureCache[key];
+    const msProcessedCache = {};
+    function processMetallicSmoothness(key, msUrl) {
+      if (msProcessedCache[key]) return msProcessedCache[key];
+      const promise = new Promise((resolve) => {
+        const img = new Image();
+        img.crossOrigin = '';
+        img.onload = () => {
+          const c = document.createElement('canvas');
+          c.width = img.width; c.height = img.height;
+          const ctx = c.getContext('2d');
+          ctx.drawImage(img, 0, 0);
+          const data = ctx.getImageData(0, 0, c.width, c.height);
+          const px = data.data;
+          const metalData = ctx.createImageData(c.width, c.height);
+          const roughData = ctx.createImageData(c.width, c.height);
+          const mPx = metalData.data, rPx = roughData.data;
+          for (let i = 0; i < px.length; i += 4) {
+            const met = px[i], rough = 255 - px[i+3];
+            mPx[i]=met; mPx[i+1]=met; mPx[i+2]=met; mPx[i+3]=255;
+            rPx[i]=rough; rPx[i+1]=rough; rPx[i+2]=rough; rPx[i+3]=255;
+          }
+          const mc = document.createElement('canvas'); mc.width=c.width; mc.height=c.height;
+          mc.getContext('2d').putImageData(metalData, 0, 0);
+          const metTex = new THREE.CanvasTexture(mc);
+          metTex.flipY = false; metTex.colorSpace = THREE.LinearSRGBColorSpace;
+          const rc = document.createElement('canvas'); rc.width=c.width; rc.height=c.height;
+          rc.getContext('2d').putImageData(roughData, 0, 0);
+          const roughTex = new THREE.CanvasTexture(rc);
+          roughTex.flipY = false; roughTex.colorSpace = THREE.LinearSRGBColorSpace;
+          resolve({ metalness: metTex, roughness: roughTex });
+        };
+        img.onerror = () => resolve({ metalness: null, roughness: null });
+        img.src = msUrl;
+      });
+      msProcessedCache[key] = promise;
+      return promise;
     }
 
     // --- Model Loading ---
     const gltfLoader = new GLTFLoader();
     const glbCache = {};
 
-    function loadShip(index) {
-      if (glbCache[index]) return Promise.resolve(glbCache[index].clone());
+    function loadShip(idx) {
+      const path = SHIPS[idx].glb;
+      if (glbCache[path]) return Promise.resolve(glbCache[path].clone());
       return new Promise((resolve, reject) => {
-        const filename = `StarSparrow${index + 1}.glb`;
-        gltfLoader.load(filename, (gltf) => {
-          glbCache[index] = gltf.scene;
+        gltfLoader.load(path, (gltf) => {
+          glbCache[path] = gltf.scene;
           resolve(gltf.scene.clone());
         }, undefined, reject);
       });
     }
 
-    function preloadAdjacent(index) {
-      const prev = (index - 1 + SHIP_COUNT) % SHIP_COUNT;
-      const next = (index + 1) % SHIP_COUNT;
-      [prev, next].forEach((i) => {
-        if (!glbCache[i]) {
-          const filename = `StarSparrow${i + 1}.glb`;
-          gltfLoader.load(filename, (gltf) => { glbCache[i] = gltf.scene; });
+    function preloadAdjacent(idx) {
+      [-1, 1].forEach(d => {
+        const i = (idx + d + SHIPS.length) % SHIPS.length;
+        const path = SHIPS[i].glb;
+        if (!glbCache[path]) {
+          gltfLoader.load(path, (gltf) => { glbCache[path] = gltf.scene; });
         }
       });
     }
 
-    function applyMaterial(model, skinIndex) {
-      const colorTex = getSkinTexture(skinIndex);
+    async function applyMaterial(model, shipIdx, skinIndex) {
+      const tg = getTexGroup(shipIdx);
+      const skin = tg.skins[skinIndex];
+      const colorTex = loadTex(skin.file, true);
+      const normalTex = tg.normalMap ? loadTex(tg.normalMap, false) : null;
+      const emissionTex = tg.emissionMap ? loadTex(tg.emissionMap, true) : null;
+
+      let metTex = null, roughTex = null;
+      if (tg.metallicSmoothnessMap) {
+        const ms = await processMetallicSmoothness(SHIPS[shipIdx].textureGroup, tg.metallicSmoothnessMap);
+        metTex = ms.metalness; roughTex = ms.roughness;
+      }
+
       model.traverse((child) => {
         if (!child.isMesh) return;
         const hasUV = child.geometry.hasAttribute('uv');
         const mats = Array.isArray(child.material) ? child.material : [child.material];
-        const newMats = mats.map((orig) => {
-          const mat = new THREE.MeshStandardMaterial({
-            map: hasUV ? colorTex : null,
-            normalMap: hasUV ? normalTexture : null,
-            metalnessMap: hasUV && metalnessTexture ? metalnessTexture : null,
-            roughnessMap: hasUV && roughnessTexture ? roughnessTexture : null,
-            metalness: metalnessTexture ? 1.0 : 0.4,
-            roughness: roughnessTexture ? 1.0 : 0.5,
-            emissiveMap: hasUV ? emissionTexture : null,
-            emissive: new THREE.Color(0xffffff),
-            emissiveIntensity: 1.5,
-            side: orig.side !== undefined ? orig.side : THREE.FrontSide,
-            transparent: orig.transparent || false,
-            opacity: orig.opacity !== undefined ? orig.opacity : 1.0,
-          });
-          return mat;
-        });
+        const newMats = mats.map((orig) => new THREE.MeshStandardMaterial({
+          map: hasUV ? colorTex : null,
+          normalMap: hasUV ? normalTex : null,
+          metalnessMap: hasUV && metTex ? metTex : null,
+          roughnessMap: hasUV && roughTex ? roughTex : null,
+          metalness: metTex ? 1.0 : 0.4,
+          roughness: roughTex ? 1.0 : 0.5,
+          emissiveMap: hasUV ? emissionTex : null,
+          emissive: new THREE.Color(0xffffff),
+          emissiveIntensity: emissionTex ? 1.5 : 0,
+          side: orig.side !== undefined ? orig.side : THREE.FrontSide,
+          transparent: orig.transparent || false,
+          opacity: orig.opacity !== undefined ? orig.opacity : 1.0,
+        }));
         child.material = newMats.length === 1 ? newMats[0] : newMats;
       });
     }
 
     // --- Ship Display ---
-    async function showShip(index, direction = 0) {
+    async function showShip(idx, direction = 0) {
       if (isTransitioning) return;
       isTransitioning = true;
 
@@ -670,30 +653,27 @@
         scene.remove(currentModel);
         currentModel.traverse((child) => {
           if (child.isMesh) {
-            const mats = Array.isArray(child.material) ? child.material : [child.material];
-            mats.forEach((m) => m.dispose());
+            (Array.isArray(child.material) ? child.material : [child.material]).forEach(m => m.dispose());
           }
         });
       }
 
       try {
-        const model = await loadShip(index);
-
-        // Auto-center and scale
+        const model = await loadShip(idx);
         const box = new THREE.Box3().setFromObject(model);
         const center = box.getCenter(new THREE.Vector3());
         const size = box.getSize(new THREE.Vector3());
-        const maxDim = Math.max(size.x, size.y, size.z);
-        const scale = 2.5 / maxDim;
+        const scale = 2.5 / Math.max(size.x, size.y, size.z);
         model.scale.setScalar(scale);
         model.position.copy(center.multiplyScalar(-scale));
         driftBase = model.position.y;
 
-        applyMaterial(model, shipSkins[index]);
-        updateEngineColor(shipSkins[index]);
+        const skinIdx = getSkinIdx(idx);
+        await applyMaterial(model, idx, skinIdx);
+        const tg = getTexGroup(idx);
+        updateEngineColor(tg.skins[skinIdx].color);
         positionEngine(model);
 
-        // Slide animation in screen space
         if (direction !== 0) {
           const right = new THREE.Vector3();
           camera.getWorldDirection(right);
@@ -705,7 +685,7 @@
 
         scene.add(model);
         currentModel = model;
-        currentShipIndex = index;
+        currentIndex = idx;
 
         camera.position.copy(defCamPos);
         controls.target.set(0, 0, 0);
@@ -713,7 +693,7 @@
 
         updateUI();
         document.getElementById('loading').classList.add('hidden');
-        preloadAdjacent(index);
+        preloadAdjacent(idx);
       } catch (err) {
         console.error('Failed to load ship:', err);
       }
@@ -726,89 +706,103 @@
       const duration = 300;
       const startPos = model.position.clone();
       const endPos = startPos.clone().sub(offsetVec);
-
       function tick(now) {
         const t = Math.min((now - startTime) / duration, 1);
-        const eased = 1 - Math.pow(1 - t, 3);
-        model.position.lerpVectors(startPos, endPos, eased);
+        model.position.lerpVectors(startPos, endPos, 1 - Math.pow(1 - t, 3));
         if (t < 1) requestAnimationFrame(tick);
         else driftBase = model.position.y;
       }
       requestAnimationFrame(tick);
     }
 
-    // --- UI Updates ---
+    // --- UI ---
     function updateUI() {
-      const ship = SHIPS[currentShipIndex];
+      const ship = SHIPS[currentIndex];
       const label = document.getElementById('ship-label');
-      label.dataset.rarity = ship ? ship.rarity : 'common';
-      document.getElementById('ship-rarity').textContent = ship ? ship.rarity : '';
-      document.getElementById('ship-name').textContent = ship ? `${ship.name}  (${currentShipIndex + 1}/${SHIP_COUNT})` : `Ship ${currentShipIndex + 1} / ${SHIP_COUNT}`;
-      document.getElementById('ship-mult').textContent = ship ? `Blackhole Mult: x${ship.blackholeMultiplicator}` : '';
+      label.dataset.rarity = ship.rarity;
+      document.getElementById('ship-rarity').textContent = ship.rarity;
+      document.getElementById('ship-name').textContent = ship.name;
+      document.getElementById('ship-counter').textContent = `${currentIndex + 1} / ${SHIPS.length}`;
 
-      const isLocked = !unlocked[currentShipIndex];
+      // Blackhole badge
+      const badge = document.getElementById('bh-badge');
+      badge.dataset.rarity = ship.rarity;
+      document.getElementById('bh-value').textContent = `x${ship.blackholeMultiplicator}`;
+
+      // Lock state
+      const isLocked = !unlockedShips.has(currentIndex);
       canvas.classList.toggle('locked', isLocked);
       document.getElementById('lock-overlay').classList.toggle('hidden', !isLocked);
       engineGroup.visible = !isLocked;
 
-      updateSkinSelection();
+      // Rarity background
+      setRarityBackground(ship.rarity);
+
+      buildSkinBar();
     }
 
-    function updateSkinSelection() {
-      document.querySelectorAll('.skin-circle').forEach((c, i) => {
-        c.classList.toggle('selected', i === shipSkins[currentShipIndex]);
-        c.classList.toggle('skin-locked', !skinUnlocked.has(i));
-      });
-    }
-
-    // --- Lock/Unlock ---
-    document.getElementById('lock-overlay').addEventListener('click', () => {
-      if (!unlocked[currentShipIndex]) {
-        unlocked[currentShipIndex] = true;
-        updateUI();
-      }
-    });
-
-    // --- Skin Bar ---
     function buildSkinBar() {
       const bar = document.getElementById('skin-bar');
-      SKINS.forEach((skin, i) => {
+      bar.innerHTML = '';
+      const tg = getTexGroup(currentIndex);
+      const groupIdx = SHIPS[currentIndex].textureGroup;
+      const unlocked = skinUnlockedPerGroup[groupIdx] || new Set();
+      const currentSkin = getSkinIdx(currentIndex);
+
+      tg.skins.forEach((skin, i) => {
         const circle = document.createElement('div');
         circle.className = 'skin-circle';
         circle.style.backgroundColor = skin.color;
-        circle.dataset.skinIndex = i;
+        if (i === currentSkin) circle.classList.add('selected');
+        if (!unlocked.has(i)) circle.classList.add('skin-locked');
+
         circle.addEventListener('click', () => {
-          if (!unlocked[currentShipIndex]) return;
-          if (!skinUnlocked.has(i)) {
-            // Unlock this skin globally
-            skinUnlocked.add(i);
+          if (!unlockedShips.has(currentIndex)) return;
+          if (!unlocked.has(i)) {
+            unlocked.add(i);
             circle.classList.remove('skin-locked');
             circle.classList.add('skin-unlocking');
             circle.addEventListener('animationend', () => circle.classList.remove('skin-unlocking'), { once: true });
             updateSkinSelection();
             return;
           }
-          shipSkins[currentShipIndex] = i;
-          if (currentModel) applyMaterial(currentModel, i);
-          updateEngineColor(i);
+          shipSkinIndex[currentIndex] = i;
+          if (currentModel) applyMaterial(currentModel, currentIndex, i);
+          updateEngineColor(tg.skins[i].color);
           updateSkinSelection();
         });
         bar.appendChild(circle);
       });
     }
 
-    // Nav buttons
-    document.getElementById('arrow-left').addEventListener('click', () => {
-      showShip((currentShipIndex - 1 + SHIP_COUNT) % SHIP_COUNT, -1);
-    });
-    document.getElementById('arrow-right').addEventListener('click', () => {
-      showShip((currentShipIndex + 1) % SHIP_COUNT, 1);
+    function updateSkinSelection() {
+      const tg = getTexGroup(currentIndex);
+      const groupIdx = SHIPS[currentIndex].textureGroup;
+      const unlocked = skinUnlockedPerGroup[groupIdx] || new Set();
+      const currentSkin = getSkinIdx(currentIndex);
+      document.querySelectorAll('.skin-circle').forEach((c, i) => {
+        c.classList.toggle('selected', i === currentSkin);
+        c.classList.toggle('skin-locked', !unlocked.has(i));
+      });
+    }
+
+    // --- Lock/Unlock ---
+    document.getElementById('lock-overlay').addEventListener('click', () => {
+      if (!unlockedShips.has(currentIndex)) {
+        unlockedShips.add(currentIndex);
+        updateUI();
+      }
     });
 
-    // Keyboard arrows for desktop testing
+    // --- Navigation ---
+    function navigate(dir) {
+      showShip((currentIndex + dir + SHIPS.length) % SHIPS.length, dir);
+    }
+    document.getElementById('arrow-left').addEventListener('click', () => navigate(-1));
+    document.getElementById('arrow-right').addEventListener('click', () => navigate(1));
     window.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowLeft') showShip((currentShipIndex - 1 + SHIP_COUNT) % SHIP_COUNT, -1);
-      if (e.key === 'ArrowRight') showShip((currentShipIndex + 1) % SHIP_COUNT, 1);
+      if (e.key === 'ArrowLeft') navigate(-1);
+      if (e.key === 'ArrowRight') navigate(1);
     });
 
     // --- Render Loop ---
@@ -819,10 +813,9 @@
 
     function countGeometry(obj) {
       let verts = 0, tris = 0;
-      obj.traverse((c) => {
+      obj.traverse(c => {
         if (c.isMesh && c.geometry) {
-          const g = c.geometry;
-          const pos = g.getAttribute('position');
+          const g = c.geometry, pos = g.getAttribute('position');
           if (pos) verts += pos.count;
           if (g.index) tris += g.index.count / 3;
           else if (pos) tris += pos.count / 3;
@@ -837,56 +830,53 @@
       const t = clock.elapsedTime;
       controls.update();
 
-      // Return to default view after 2s of no interaction
       if (lastInteraction > 0 && performance.now() - lastInteraction > 2000) {
         camera.position.lerp(defCamPos, 0.02);
-        isReturning = true;
       }
+
+      // Smooth background color transitions
+      const u = starsBg.material.uniforms;
+      u.uBgLow.value.lerp(targetBgLow, 0.03);
+      u.uBgHigh.value.lerp(targetBgHigh, 0.03);
+      u.uNebula.value.lerp(targetNebula, 0.03);
 
       updateExhaust(dt);
-
-      // Gentle drift
-      if (currentModel) {
-        currentModel.position.y = driftBase + Math.sin(t * 0.8) * 0.06;
-      }
+      if (currentModel) currentModel.position.y = driftBase + Math.sin(t * 0.8) * 0.06;
 
       exhaustMat.uniforms.uTime.value = t;
-      // Update stars twinkle only every ~3 frames
-      if ((t * 60 | 0) % 3 === 0) starsBg.material.uniforms.uTime.value = t;
+      if ((t * 60 | 0) % 3 === 0) u.uTime.value = t;
       composer.render();
 
       fpsFrames++;
       fpsTime += dt;
       if (fpsTime >= 0.5) {
         fpsValue = Math.round(fpsFrames / fpsTime);
-        fpsFrames = 0;
-        fpsTime = 0;
+        fpsFrames = 0; fpsTime = 0;
         const geo = currentModel ? countGeometry(currentModel) : { verts: 0, tris: 0 };
         statsEl.textContent = `${fpsValue} FPS\n${geo.verts.toLocaleString()} verts\n${geo.tris.toLocaleString()} tris`;
       }
     }
 
-    // --- Telegram Web App fullscreen ---
+    // --- Telegram Web App ---
     if (window.Telegram && Telegram.WebApp) {
-      Telegram.WebApp.ready();
-      Telegram.WebApp.expand();
+      Telegram.WebApp.ready(); Telegram.WebApp.expand();
       if (Telegram.WebApp.requestFullscreen) Telegram.WebApp.requestFullscreen();
       if (Telegram.WebApp.disableVerticalSwipes) Telegram.WebApp.disableVerticalSwipes();
     }
 
-    // --- Prevent page scroll / pull-to-refresh ---
     document.addEventListener('touchmove', (e) => {
-      if (e.target.closest('#skin-bar')) return; // allow skin bar scroll
+      if (e.target.closest('#skin-bar')) return;
       e.preventDefault();
     }, { passive: false });
 
     // --- Init ---
     animate();
-    loadShipData().then(() => { buildSkinBar(); initSkinUnlocks(); showShip(0); });
+    loadShipData().then(() => {
+      initSkinUnlocks();
+      showShip(0);
+    });
 
-    setTimeout(() => {
-      document.getElementById('swipe-hint').classList.add('fade-out');
-    }, 3000);
+    setTimeout(() => document.getElementById('swipe-hint').classList.add('fade-out'), 3000);
   </script>
 </body>
 </html>
