@@ -1,1279 +1,1279 @@
 {
   "textureGroups": [
     {
-      "normalMap": "textures/AstroEagle/Standard/AstroEagle_Normal.png",
-      "metallicSmoothnessMap": "textures/AstroEagle/Standard/AstroEagle_MetallicSmoothness.png",
-      "emissionMap": "textures/AstroEagle/Standard/AstroEagle_Emission1.png",
+      "normalMap": "Textures/AstroEagle/Standard/AstroEagle_Normal.png",
+      "metallicSmoothnessMap": "Textures/AstroEagle/Standard/AstroEagle_MetallicSmoothness.png",
+      "emissionMap": "Textures/AstroEagle/Standard/AstroEagle_Emission1.png",
       "skins": [
         {
           "name": "Aqua",
-          "file": "textures/AstroEagle/Standard/AstroEagle_Aqua.png",
+          "file": "Textures/AstroEagle/Standard/AstroEagle_Aqua.png",
           "color": "#00CED1",
           "unlocked": true
         },
         {
           "name": "Blue",
-          "file": "textures/AstroEagle/Standard/AstroEagle_Blue.png",
+          "file": "Textures/AstroEagle/Standard/AstroEagle_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Green",
-          "file": "textures/AstroEagle/Standard/AstroEagle_Green.png",
+          "file": "Textures/AstroEagle/Standard/AstroEagle_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/AstroEagle/Standard/AstroEagle_Grey.png",
+          "file": "Textures/AstroEagle/Standard/AstroEagle_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Orange",
-          "file": "textures/AstroEagle/Standard/AstroEagle_Orange.png",
+          "file": "Textures/AstroEagle/Standard/AstroEagle_Orange.png",
           "color": "#e67e22",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/AstroEagle/Standard/AstroEagle_Purple.png",
+          "file": "Textures/AstroEagle/Standard/AstroEagle_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "PurpleBloom",
-          "file": "textures/AstroEagle/Standard/AstroEagle_PurpleBloom.png",
+          "file": "Textures/AstroEagle/Standard/AstroEagle_PurpleBloom.png",
           "color": "#A020F0",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/AstroEagle/Standard/AstroEagle_Red.png",
+          "file": "Textures/AstroEagle/Standard/AstroEagle_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Silver",
-          "file": "textures/AstroEagle/Standard/AstroEagle_Silver.png",
+          "file": "Textures/AstroEagle/Standard/AstroEagle_Silver.png",
           "color": "#C0C0C0",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/AstroEagle/Standard/AstroEagle_White.png",
+          "file": "Textures/AstroEagle/Standard/AstroEagle_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/CosmicShark/CosmicShark_Normal.png",
-      "metallicSmoothnessMap": "textures/CosmicShark/CosmicShark_MetallicSmoothness.png",
-      "emissionMap": "textures/CosmicShark/CosmicShark_Emission.png",
+      "normalMap": "Textures/CosmicShark/CosmicShark_Normal.png",
+      "metallicSmoothnessMap": "Textures/CosmicShark/CosmicShark_MetallicSmoothness.png",
+      "emissionMap": "Textures/CosmicShark/CosmicShark_Emission.png",
       "skins": [
         {
           "name": "Black",
-          "file": "textures/CosmicShark/CosmicShark_Black.png",
+          "file": "Textures/CosmicShark/CosmicShark_Black.png",
           "color": "#2c3e50",
           "unlocked": true
         },
         {
           "name": "Blue",
-          "file": "textures/CosmicShark/CosmicShark_Blue.png",
+          "file": "Textures/CosmicShark/CosmicShark_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Chartreuse",
-          "file": "textures/CosmicShark/CosmicShark_Chartreuse.png",
+          "file": "Textures/CosmicShark/CosmicShark_Chartreuse.png",
           "color": "#7FFF00",
           "unlocked": false
         },
         {
           "name": "Cherry",
-          "file": "textures/CosmicShark/CosmicShark_Cherry.png",
+          "file": "Textures/CosmicShark/CosmicShark_Cherry.png",
           "color": "#DE3163",
           "unlocked": false
         },
         {
           "name": "Cyan",
-          "file": "textures/CosmicShark/CosmicShark_Cyan.png",
+          "file": "Textures/CosmicShark/CosmicShark_Cyan.png",
           "color": "#1abc9c",
           "unlocked": false
         },
         {
           "name": "Green",
-          "file": "textures/CosmicShark/CosmicShark_Green.png",
+          "file": "Textures/CosmicShark/CosmicShark_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/CosmicShark/CosmicShark_Grey.png",
+          "file": "Textures/CosmicShark/CosmicShark_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/CosmicShark/CosmicShark_Purple.png",
+          "file": "Textures/CosmicShark/CosmicShark_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/CosmicShark/CosmicShark_Red.png",
+          "file": "Textures/CosmicShark/CosmicShark_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/CosmicShark/CosmicShark_White.png",
+          "file": "Textures/CosmicShark/CosmicShark_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         },
         {
           "name": "Yellow",
-          "file": "textures/CosmicShark/CosmicShark_Yellow.png",
+          "file": "Textures/CosmicShark/CosmicShark_Yellow.png",
           "color": "#f1c40f",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/CraizanStar/CraizanStar_Normal.png",
-      "metallicSmoothnessMap": "textures/CraizanStar/CraizanStar_MetallicSmoothness.png",
-      "emissionMap": "textures/CraizanStar/CraizanStar_Emission1.png",
+      "normalMap": "Textures/CraizanStar/CraizanStar_Normal.png",
+      "metallicSmoothnessMap": "Textures/CraizanStar/CraizanStar_MetallicSmoothness.png",
+      "emissionMap": "Textures/CraizanStar/CraizanStar_Emission1.png",
       "skins": [
         {
           "name": "Black",
-          "file": "textures/CraizanStar/CraizanStar_Black.png",
+          "file": "Textures/CraizanStar/CraizanStar_Black.png",
           "color": "#2c3e50",
           "unlocked": true
         },
         {
           "name": "Blue",
-          "file": "textures/CraizanStar/CraizanStar_Blue.png",
+          "file": "Textures/CraizanStar/CraizanStar_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Emerald",
-          "file": "textures/CraizanStar/CraizanStar_Emerald.png",
+          "file": "Textures/CraizanStar/CraizanStar_Emerald.png",
           "color": "#50C878",
           "unlocked": false
         },
         {
           "name": "Green",
-          "file": "textures/CraizanStar/CraizanStar_Green.png",
+          "file": "Textures/CraizanStar/CraizanStar_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/CraizanStar/CraizanStar_Grey.png",
+          "file": "Textures/CraizanStar/CraizanStar_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Orange",
-          "file": "textures/CraizanStar/CraizanStar_Orange.png",
+          "file": "Textures/CraizanStar/CraizanStar_Orange.png",
           "color": "#e67e22",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/CraizanStar/CraizanStar_Purple.png",
+          "file": "Textures/CraizanStar/CraizanStar_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/CraizanStar/CraizanStar_Red.png",
+          "file": "Textures/CraizanStar/CraizanStar_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Ruby",
-          "file": "textures/CraizanStar/CraizanStar_Ruby.png",
+          "file": "Textures/CraizanStar/CraizanStar_Ruby.png",
           "color": "#E0115F",
           "unlocked": false
         },
         {
           "name": "Silver",
-          "file": "textures/CraizanStar/CraizanStar_Silver.png",
+          "file": "Textures/CraizanStar/CraizanStar_Silver.png",
           "color": "#C0C0C0",
           "unlocked": false
         },
         {
           "name": "Violet",
-          "file": "textures/CraizanStar/CraizanStar_Violet.png",
+          "file": "Textures/CraizanStar/CraizanStar_Violet.png",
           "color": "#8F00FF",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/CraizanStar/CraizanStar_White.png",
+          "file": "Textures/CraizanStar/CraizanStar_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/ForceBadger/ForceBadger_Normal.png",
-      "metallicSmoothnessMap": "textures/ForceBadger/ForceBadger_MetallicSmoothness.png",
-      "emissionMap": "textures/ForceBadger/ForceBadger_Emission.png",
+      "normalMap": "Textures/ForceBadger/ForceBadger_Normal.png",
+      "metallicSmoothnessMap": "Textures/ForceBadger/ForceBadger_MetallicSmoothness.png",
+      "emissionMap": "Textures/ForceBadger/ForceBadger_Emission.png",
       "skins": [
         {
           "name": "Black",
-          "file": "textures/ForceBadger/ForceBadger_Black.png",
+          "file": "Textures/ForceBadger/ForceBadger_Black.png",
           "color": "#2c3e50",
           "unlocked": true
         },
         {
           "name": "Blue",
-          "file": "textures/ForceBadger/ForceBadger_Blue.png",
+          "file": "Textures/ForceBadger/ForceBadger_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Cyan",
-          "file": "textures/ForceBadger/ForceBadger_Cyan.png",
+          "file": "Textures/ForceBadger/ForceBadger_Cyan.png",
           "color": "#1abc9c",
           "unlocked": false
         },
         {
           "name": "Green",
-          "file": "textures/ForceBadger/ForceBadger_Green.png",
+          "file": "Textures/ForceBadger/ForceBadger_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/ForceBadger/ForceBadger_Grey.png",
+          "file": "Textures/ForceBadger/ForceBadger_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Orange",
-          "file": "textures/ForceBadger/ForceBadger_Orange.png",
+          "file": "Textures/ForceBadger/ForceBadger_Orange.png",
           "color": "#e67e22",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/ForceBadger/ForceBadger_Purple.png",
+          "file": "Textures/ForceBadger/ForceBadger_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/ForceBadger/ForceBadger_Red.png",
+          "file": "Textures/ForceBadger/ForceBadger_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/ForceBadger/ForceBadger_White.png",
+          "file": "Textures/ForceBadger/ForceBadger_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Normal.png",
-      "metallicSmoothnessMap": "textures/GalacticLeopard/Main/GalacticLeopard_Main_MetallicSmoothness.png",
-      "emissionMap": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Emission1.png",
+      "normalMap": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_Normal.png",
+      "metallicSmoothnessMap": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_MetallicSmoothness.png",
+      "emissionMap": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_Emission1.png",
       "skins": [
         {
           "name": "Black",
-          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Black.png",
+          "file": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_Black.png",
           "color": "#2c3e50",
           "unlocked": true
         },
         {
           "name": "Blue",
-          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Blue.png",
+          "file": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Green",
-          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Green.png",
+          "file": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Grey.png",
+          "file": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Orange",
-          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Orange.png",
+          "file": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_Orange.png",
           "color": "#e67e22",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Purple.png",
+          "file": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Red.png",
+          "file": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Silver",
-          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_Silver.png",
+          "file": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_Silver.png",
           "color": "#C0C0C0",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/GalacticLeopard/Main/GalacticLeopard_Main_White.png",
+          "file": "Textures/GalacticLeopard/Main/GalacticLeopard_Main_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/GalacticOkamoto/GalacticOkamotoNormal.png",
-      "metallicSmoothnessMap": "textures/GalacticOkamoto/GalacticOkamoto_MetallicSmoothness.png",
-      "emissionMap": "textures/GalacticOkamoto/GalacticOkamoto_Emission.png",
+      "normalMap": "Textures/GalacticOkamoto/GalacticOkamotoNormal.png",
+      "metallicSmoothnessMap": "Textures/GalacticOkamoto/GalacticOkamoto_MetallicSmoothness.png",
+      "emissionMap": "Textures/GalacticOkamoto/GalacticOkamoto_Emission.png",
       "skins": [
         {
           "name": "Blue",
-          "file": "textures/GalacticOkamoto/GalacticOkamoto_Blue.png",
+          "file": "Textures/GalacticOkamoto/GalacticOkamoto_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Green",
-          "file": "textures/GalacticOkamoto/GalacticOkamoto_Green.png",
+          "file": "Textures/GalacticOkamoto/GalacticOkamoto_Green.png",
           "color": "#27ae60",
           "unlocked": true
         },
         {
           "name": "Grey",
-          "file": "textures/GalacticOkamoto/GalacticOkamoto_Grey.png",
+          "file": "Textures/GalacticOkamoto/GalacticOkamoto_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Lime",
-          "file": "textures/GalacticOkamoto/GalacticOkamoto_Lime.png",
+          "file": "Textures/GalacticOkamoto/GalacticOkamoto_Lime.png",
           "color": "#32CD32",
           "unlocked": false
         },
         {
           "name": "Midnight",
-          "file": "textures/GalacticOkamoto/GalacticOkamoto_Midnight.png",
+          "file": "Textures/GalacticOkamoto/GalacticOkamoto_Midnight.png",
           "color": "#191970",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/GalacticOkamoto/GalacticOkamoto_Purple.png",
+          "file": "Textures/GalacticOkamoto/GalacticOkamoto_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/GalacticOkamoto/GalacticOkamoto_Red.png",
+          "file": "Textures/GalacticOkamoto/GalacticOkamoto_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Silver",
-          "file": "textures/GalacticOkamoto/GalacticOkamoto_Silver.png",
+          "file": "Textures/GalacticOkamoto/GalacticOkamoto_Silver.png",
           "color": "#C0C0C0",
           "unlocked": false
         },
         {
           "name": "Vessel",
-          "file": "textures/GalacticOkamoto/GalacticOkamoto_Vessel.png",
+          "file": "Textures/GalacticOkamoto/GalacticOkamoto_Vessel.png",
           "color": "#4682B4",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/GalacticOkamoto/GalacticOkamoto_White.png",
+          "file": "Textures/GalacticOkamoto/GalacticOkamoto_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/GalaxyRaptor/GalaxyRaptor_Normal.png",
-      "metallicSmoothnessMap": "textures/GalaxyRaptor/GalaxyRaptor_MetallicSmoothness.png",
-      "emissionMap": "textures/GalaxyRaptor/GalaxyRaptor_Emission1.png",
+      "normalMap": "Textures/GalaxyRaptor/GalaxyRaptor_Normal.png",
+      "metallicSmoothnessMap": "Textures/GalaxyRaptor/GalaxyRaptor_MetallicSmoothness.png",
+      "emissionMap": "Textures/GalaxyRaptor/GalaxyRaptor_Emission1.png",
       "skins": [
         {
           "name": "Blue",
-          "file": "textures/GalaxyRaptor/GalaxyRaptor_Blue.png",
+          "file": "Textures/GalaxyRaptor/GalaxyRaptor_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Brown",
-          "file": "textures/GalaxyRaptor/GalaxyRaptor_Brown.png",
+          "file": "Textures/GalaxyRaptor/GalaxyRaptor_Brown.png",
           "color": "#8B4513",
           "unlocked": true
         },
         {
           "name": "Green",
-          "file": "textures/GalaxyRaptor/GalaxyRaptor_Green.png",
+          "file": "Textures/GalaxyRaptor/GalaxyRaptor_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/GalaxyRaptor/GalaxyRaptor_Grey.png",
+          "file": "Textures/GalaxyRaptor/GalaxyRaptor_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/GalaxyRaptor/GalaxyRaptor_Purple.png",
+          "file": "Textures/GalaxyRaptor/GalaxyRaptor_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/GalaxyRaptor/GalaxyRaptor_Red.png",
+          "file": "Textures/GalaxyRaptor/GalaxyRaptor_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Ruby",
-          "file": "textures/GalaxyRaptor/GalaxyRaptor_Ruby.png",
+          "file": "Textures/GalaxyRaptor/GalaxyRaptor_Ruby.png",
           "color": "#E0115F",
           "unlocked": false
         },
         {
           "name": "Silver",
-          "file": "textures/GalaxyRaptor/GalaxyRaptor_Silver.png",
+          "file": "Textures/GalaxyRaptor/GalaxyRaptor_Silver.png",
           "color": "#C0C0C0",
           "unlocked": false
         },
         {
           "name": "Turquoise",
-          "file": "textures/GalaxyRaptor/GalaxyRaptor_Turquoise.png",
+          "file": "Textures/GalaxyRaptor/GalaxyRaptor_Turquoise.png",
           "color": "#40E0D0",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/GalaxyRaptor/GalaxyRaptor_White.png",
+          "file": "Textures/GalaxyRaptor/GalaxyRaptor_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Normal.png",
-      "metallicSmoothnessMap": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_MetallicSmoothness.png",
-      "emissionMap": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Emission-1.png",
+      "normalMap": "Textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Normal.png",
+      "metallicSmoothnessMap": "Textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_MetallicSmoothness.png",
+      "emissionMap": "Textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Emission-1.png",
       "skins": [
         {
           "name": "Blue",
-          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Blue.png",
+          "file": "Textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Green",
-          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Green.png",
+          "file": "Textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Green.png",
           "color": "#27ae60",
           "unlocked": true
         },
         {
           "name": "GreenYellow",
-          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_GreenYellow.png",
+          "file": "Textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_GreenYellow.png",
           "color": "#ADFF2F",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Grey.png",
+          "file": "Textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Red.png",
+          "file": "Textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Violet",
-          "file": "textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Violet.png",
+          "file": "Textures/GenericSpaceships/GenericSpaceships1-8/GenericSpaceships_Violet.png",
           "color": "#8F00FF",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/HyperFalcon/HyperFalcon_Normal.png",
-      "metallicSmoothnessMap": "textures/HyperFalcon/HyperFalcon_MetallicSmoothness.png",
-      "emissionMap": "textures/HyperFalcon/HyperFalcon_Emission1.png",
+      "normalMap": "Textures/HyperFalcon/HyperFalcon_Normal.png",
+      "metallicSmoothnessMap": "Textures/HyperFalcon/HyperFalcon_MetallicSmoothness.png",
+      "emissionMap": "Textures/HyperFalcon/HyperFalcon_Emission1.png",
       "skins": [
         {
           "name": "Blue",
-          "file": "textures/HyperFalcon/HyperFalcon_Blue.png",
+          "file": "Textures/HyperFalcon/HyperFalcon_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Cherry",
-          "file": "textures/HyperFalcon/HyperFalcon_Cherry.png",
+          "file": "Textures/HyperFalcon/HyperFalcon_Cherry.png",
           "color": "#DE3163",
           "unlocked": true
         },
         {
           "name": "ExoticPurple",
-          "file": "textures/HyperFalcon/HyperFalcon_ExoticPurple.png",
+          "file": "Textures/HyperFalcon/HyperFalcon_ExoticPurple.png",
           "color": "#8B008B",
           "unlocked": false
         },
         {
           "name": "Gold",
-          "file": "textures/HyperFalcon/HyperFalcon_Gold.png",
+          "file": "Textures/HyperFalcon/HyperFalcon_Gold.png",
           "color": "#FFD700",
           "unlocked": false
         },
         {
           "name": "Green",
-          "file": "textures/HyperFalcon/HyperFalcon_Green.png",
+          "file": "Textures/HyperFalcon/HyperFalcon_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/HyperFalcon/HyperFalcon_Grey.png",
+          "file": "Textures/HyperFalcon/HyperFalcon_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/HyperFalcon/HyperFalcon_Purple.png",
+          "file": "Textures/HyperFalcon/HyperFalcon_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/HyperFalcon/HyperFalcon_Red.png",
+          "file": "Textures/HyperFalcon/HyperFalcon_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Silver",
-          "file": "textures/HyperFalcon/HyperFalcon_Silver.png",
+          "file": "Textures/HyperFalcon/HyperFalcon_Silver.png",
           "color": "#C0C0C0",
           "unlocked": false
         },
         {
           "name": "WaterMelon",
-          "file": "textures/HyperFalcon/HyperFalcon_WaterMelon.png",
+          "file": "Textures/HyperFalcon/HyperFalcon_WaterMelon.png",
           "color": "#FC6C85",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/HyperFalcon/HyperFalcon_White.png",
+          "file": "Textures/HyperFalcon/HyperFalcon_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/LightFox/LightFox_Normal.png",
-      "metallicSmoothnessMap": "textures/LightFox/LightFox_MetallicSmoothness.png",
-      "emissionMap": "textures/LightFox/LightFox_Emission1.png",
+      "normalMap": "Textures/LightFox/LightFox_Normal.png",
+      "metallicSmoothnessMap": "Textures/LightFox/LightFox_MetallicSmoothness.png",
+      "emissionMap": "Textures/LightFox/LightFox_Emission1.png",
       "skins": [
         {
           "name": "Blue",
-          "file": "textures/LightFox/LightFox_Blue.png",
+          "file": "Textures/LightFox/LightFox_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Cherry",
-          "file": "textures/LightFox/LightFox_Cherry.png",
+          "file": "Textures/LightFox/LightFox_Cherry.png",
           "color": "#DE3163",
           "unlocked": true
         },
         {
           "name": "Green",
-          "file": "textures/LightFox/LightFox_Green.png",
+          "file": "Textures/LightFox/LightFox_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/LightFox/LightFox_Grey.png",
+          "file": "Textures/LightFox/LightFox_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Orange",
-          "file": "textures/LightFox/LightFox_Orange.png",
+          "file": "Textures/LightFox/LightFox_Orange.png",
           "color": "#e67e22",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/LightFox/LightFox_Purple.png",
+          "file": "Textures/LightFox/LightFox_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/LightFox/LightFox_Red.png",
+          "file": "Textures/LightFox/LightFox_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Silver",
-          "file": "textures/LightFox/LightFox_Silver.png",
+          "file": "Textures/LightFox/LightFox_Silver.png",
           "color": "#C0C0C0",
           "unlocked": false
         },
         {
           "name": "Violet",
-          "file": "textures/LightFox/LightFox_Violet.png",
+          "file": "Textures/LightFox/LightFox_Violet.png",
           "color": "#8F00FF",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/LightFox/LightFox_White.png",
+          "file": "Textures/LightFox/LightFox_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/MeteorMantis/MeteorMantis_Normal.png",
-      "metallicSmoothnessMap": "textures/MeteorMantis/MeteorMantis_MetallicSmoothness.png",
-      "emissionMap": "textures/MeteorMantis/MeteorMantis_Emission.png",
+      "normalMap": "Textures/MeteorMantis/MeteorMantis_Normal.png",
+      "metallicSmoothnessMap": "Textures/MeteorMantis/MeteorMantis_MetallicSmoothness.png",
+      "emissionMap": "Textures/MeteorMantis/MeteorMantis_Emission.png",
       "skins": [
         {
           "name": "Blue",
-          "file": "textures/MeteorMantis/MeteorMantis_Blue.png",
+          "file": "Textures/MeteorMantis/MeteorMantis_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Cyan",
-          "file": "textures/MeteorMantis/MeteorMantis_Cyan.png",
+          "file": "Textures/MeteorMantis/MeteorMantis_Cyan.png",
           "color": "#1abc9c",
           "unlocked": true
         },
         {
           "name": "Green",
-          "file": "textures/MeteorMantis/MeteorMantis_Green.png",
+          "file": "Textures/MeteorMantis/MeteorMantis_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/MeteorMantis/MeteorMantis_Grey.png",
+          "file": "Textures/MeteorMantis/MeteorMantis_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Lime",
-          "file": "textures/MeteorMantis/MeteorMantis_Lime.png",
+          "file": "Textures/MeteorMantis/MeteorMantis_Lime.png",
           "color": "#32CD32",
           "unlocked": false
         },
         {
           "name": "Orange",
-          "file": "textures/MeteorMantis/MeteorMantis_Orange.png",
+          "file": "Textures/MeteorMantis/MeteorMantis_Orange.png",
           "color": "#e67e22",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/MeteorMantis/MeteorMantis_Purple.png",
+          "file": "Textures/MeteorMantis/MeteorMantis_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/MeteorMantis/MeteorMantis_Red.png",
+          "file": "Textures/MeteorMantis/MeteorMantis_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Violet",
-          "file": "textures/MeteorMantis/MeteorMantis_Violet.png",
+          "file": "Textures/MeteorMantis/MeteorMantis_Violet.png",
           "color": "#8F00FF",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/MeteorMantis/MeteorMantis_White.png",
+          "file": "Textures/MeteorMantis/MeteorMantis_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/NightAye/NightAye_Normal.png",
-      "metallicSmoothnessMap": "textures/NightAye/NightAye_MetallicSmoothness.png",
-      "emissionMap": "textures/NightAye/NightAye_Emission1.png",
+      "normalMap": "Textures/NightAye/NightAye_Normal.png",
+      "metallicSmoothnessMap": "Textures/NightAye/NightAye_MetallicSmoothness.png",
+      "emissionMap": "Textures/NightAye/NightAye_Emission1.png",
       "skins": [
         {
           "name": "Beige",
-          "file": "textures/NightAye/NightAye_Beige.png",
+          "file": "Textures/NightAye/NightAye_Beige.png",
           "color": "#F5F5DC",
           "unlocked": true
         },
         {
           "name": "Blue",
-          "file": "textures/NightAye/NightAye_Blue.png",
+          "file": "Textures/NightAye/NightAye_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Cyan",
-          "file": "textures/NightAye/NightAye_Cyan.png",
+          "file": "Textures/NightAye/NightAye_Cyan.png",
           "color": "#1abc9c",
           "unlocked": false
         },
         {
           "name": "Green",
-          "file": "textures/NightAye/NightAye_Green.png",
+          "file": "Textures/NightAye/NightAye_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/NightAye/NightAye_Grey.png",
+          "file": "Textures/NightAye/NightAye_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Lime",
-          "file": "textures/NightAye/NightAye_Lime.png",
+          "file": "Textures/NightAye/NightAye_Lime.png",
           "color": "#32CD32",
           "unlocked": false
         },
         {
           "name": "Orange",
-          "file": "textures/NightAye/NightAye_Orange.png",
+          "file": "Textures/NightAye/NightAye_Orange.png",
           "color": "#e67e22",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/NightAye/NightAye_Purple.png",
+          "file": "Textures/NightAye/NightAye_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/NightAye/NightAye_Red.png",
+          "file": "Textures/NightAye/NightAye_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Tan",
-          "file": "textures/NightAye/NightAye_Tan.png",
+          "file": "Textures/NightAye/NightAye_Tan.png",
           "color": "#D2B48C",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/NightAye/NightAye_White.png",
+          "file": "Textures/NightAye/NightAye_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/ProtonLegacy/ProtonLegacy_Normal.png",
-      "metallicSmoothnessMap": "textures/ProtonLegacy/ProtonLegacy_MetallicSmoothness.png",
-      "emissionMap": "textures/ProtonLegacy/ProtonLegacy_Emission1.png",
+      "normalMap": "Textures/ProtonLegacy/ProtonLegacy_Normal.png",
+      "metallicSmoothnessMap": "Textures/ProtonLegacy/ProtonLegacy_MetallicSmoothness.png",
+      "emissionMap": "Textures/ProtonLegacy/ProtonLegacy_Emission1.png",
       "skins": [
         {
           "name": "Blue",
-          "file": "textures/ProtonLegacy/ProtonLegacy_Blue.png",
+          "file": "Textures/ProtonLegacy/ProtonLegacy_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Cyan",
-          "file": "textures/ProtonLegacy/ProtonLegacy_Cyan.png",
+          "file": "Textures/ProtonLegacy/ProtonLegacy_Cyan.png",
           "color": "#1abc9c",
           "unlocked": true
         },
         {
           "name": "Gold",
-          "file": "textures/ProtonLegacy/ProtonLegacy_Gold.png",
+          "file": "Textures/ProtonLegacy/ProtonLegacy_Gold.png",
           "color": "#FFD700",
           "unlocked": false
         },
         {
           "name": "Green",
-          "file": "textures/ProtonLegacy/ProtonLegacy_Green.png",
+          "file": "Textures/ProtonLegacy/ProtonLegacy_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/ProtonLegacy/ProtonLegacy_Grey.png",
+          "file": "Textures/ProtonLegacy/ProtonLegacy_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/ProtonLegacy/ProtonLegacy_Purple.png",
+          "file": "Textures/ProtonLegacy/ProtonLegacy_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/ProtonLegacy/ProtonLegacy_Red.png",
+          "file": "Textures/ProtonLegacy/ProtonLegacy_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Ruby",
-          "file": "textures/ProtonLegacy/ProtonLegacy_Ruby.png",
+          "file": "Textures/ProtonLegacy/ProtonLegacy_Ruby.png",
           "color": "#E0115F",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/ProtonLegacy/ProtonLegacy_White.png",
+          "file": "Textures/ProtonLegacy/ProtonLegacy_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         },
         {
           "name": "Yellow",
-          "file": "textures/ProtonLegacy/ProtonLegacy_Yellow.png",
+          "file": "Textures/ProtonLegacy/ProtonLegacy_Yellow.png",
           "color": "#f1c40f",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/SpaceExcalibur/SpaceExcalibur_Normal.png",
-      "metallicSmoothnessMap": "textures/SpaceExcalibur/SpaceExcalibur_MetallicSmoothness.png",
-      "emissionMap": "textures/SpaceExcalibur/SpaceExcalibur_Emission1.png",
+      "normalMap": "Textures/SpaceExcalibur/SpaceExcalibur_Normal.png",
+      "metallicSmoothnessMap": "Textures/SpaceExcalibur/SpaceExcalibur_MetallicSmoothness.png",
+      "emissionMap": "Textures/SpaceExcalibur/SpaceExcalibur_Emission1.png",
       "skins": [
         {
           "name": "Black",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_Black.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_Black.png",
           "color": "#2c3e50",
           "unlocked": true
         },
         {
           "name": "Blue",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_Blue.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Cyan",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_Cyan.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_Cyan.png",
           "color": "#1abc9c",
           "unlocked": false
         },
         {
           "name": "Emerald",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_Emerald.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_Emerald.png",
           "color": "#50C878",
           "unlocked": false
         },
         {
           "name": "Green",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_Green.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_Grey.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_Purple.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_Red.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "RedOriginal",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_RedOriginal.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_RedOriginal.png",
           "color": "#C0392B",
           "unlocked": false
         },
         {
           "name": "RoyalPurple",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_RoyalPurple.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_RoyalPurple.png",
           "color": "#7851A9",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_White.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         },
         {
           "name": "Yellow",
-          "file": "textures/SpaceExcalibur/SpaceExcalibur_Yellow.png",
+          "file": "Textures/SpaceExcalibur/SpaceExcalibur_Yellow.png",
           "color": "#f1c40f",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/SpaceSphinx/SpaceSphinx_Normal.png",
-      "metallicSmoothnessMap": "textures/SpaceSphinx/SpaceSphinx_MetallicSmoothness.png",
-      "emissionMap": "textures/SpaceSphinx/SpaceSphinx_Emission1.png",
+      "normalMap": "Textures/SpaceSphinx/SpaceSphinx_Normal.png",
+      "metallicSmoothnessMap": "Textures/SpaceSphinx/SpaceSphinx_MetallicSmoothness.png",
+      "emissionMap": "Textures/SpaceSphinx/SpaceSphinx_Emission1.png",
       "skins": [
         {
           "name": "Blue",
-          "file": "textures/SpaceSphinx/SpaceSphinx_Blue.png",
+          "file": "Textures/SpaceSphinx/SpaceSphinx_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Cyan",
-          "file": "textures/SpaceSphinx/SpaceSphinx_Cyan.png",
+          "file": "Textures/SpaceSphinx/SpaceSphinx_Cyan.png",
           "color": "#1abc9c",
           "unlocked": true
         },
         {
           "name": "Green",
-          "file": "textures/SpaceSphinx/SpaceSphinx_Green.png",
+          "file": "Textures/SpaceSphinx/SpaceSphinx_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/SpaceSphinx/SpaceSphinx_Grey.png",
+          "file": "Textures/SpaceSphinx/SpaceSphinx_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Indigo",
-          "file": "textures/SpaceSphinx/SpaceSphinx_Indigo.png",
+          "file": "Textures/SpaceSphinx/SpaceSphinx_Indigo.png",
           "color": "#4B0082",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/SpaceSphinx/SpaceSphinx_Purple.png",
+          "file": "Textures/SpaceSphinx/SpaceSphinx_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/SpaceSphinx/SpaceSphinx_Red.png",
+          "file": "Textures/SpaceSphinx/SpaceSphinx_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "RedOriginal",
-          "file": "textures/SpaceSphinx/SpaceSphinx_RedOriginal.png",
+          "file": "Textures/SpaceSphinx/SpaceSphinx_RedOriginal.png",
           "color": "#C0392B",
           "unlocked": false
         },
         {
           "name": "Tan",
-          "file": "textures/SpaceSphinx/SpaceSphinx_Tan.png",
+          "file": "Textures/SpaceSphinx/SpaceSphinx_Tan.png",
           "color": "#D2B48C",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/SpaceSphinx/SpaceSphinx_White.png",
+          "file": "Textures/SpaceSphinx/SpaceSphinx_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         },
         {
           "name": "Yellow",
-          "file": "textures/SpaceSphinx/SpaceSphinx_Yellow.png",
+          "file": "Textures/SpaceSphinx/SpaceSphinx_Yellow.png",
           "color": "#f1c40f",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/StarForce/StarForce_Normal.png",
-      "metallicSmoothnessMap": "textures/StarForce/StarForce_MetallicSmoothness.png",
-      "emissionMap": "textures/StarForce/StarForce_Emission.png",
+      "normalMap": "Textures/StarForce/StarForce_Normal.png",
+      "metallicSmoothnessMap": "Textures/StarForce/StarForce_MetallicSmoothness.png",
+      "emissionMap": "Textures/StarForce/StarForce_Emission.png",
       "skins": [
         {
           "name": "Black",
-          "file": "textures/StarForce/StarForce_Black.png",
+          "file": "Textures/StarForce/StarForce_Black.png",
           "color": "#2c3e50",
           "unlocked": true
         },
         {
           "name": "Blue",
-          "file": "textures/StarForce/StarForce_Blue.png",
+          "file": "Textures/StarForce/StarForce_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Cyan",
-          "file": "textures/StarForce/StarForce_Cyan.png",
+          "file": "Textures/StarForce/StarForce_Cyan.png",
           "color": "#1abc9c",
           "unlocked": false
         },
         {
           "name": "Green",
-          "file": "textures/StarForce/StarForce_Green.png",
+          "file": "Textures/StarForce/StarForce_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/StarForce/StarForce_Grey.png",
+          "file": "Textures/StarForce/StarForce_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/StarForce/StarForce_Purple.png",
+          "file": "Textures/StarForce/StarForce_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/StarForce/StarForce_Red.png",
+          "file": "Textures/StarForce/StarForce_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Silver",
-          "file": "textures/StarForce/StarForce_Silver.png",
+          "file": "Textures/StarForce/StarForce_Silver.png",
           "color": "#C0C0C0",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/StarForce/StarForce_White.png",
+          "file": "Textures/StarForce/StarForce_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         },
         {
           "name": "Yellow",
-          "file": "textures/StarForce/StarForce_Yellow.png",
+          "file": "Textures/StarForce/StarForce_Yellow.png",
           "color": "#f1c40f",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/StarSparrow/StarSparrow_Normal.png",
-      "metallicSmoothnessMap": "textures/StarSparrow/StarSparrow_MetallicSmoothness.png",
-      "emissionMap": "textures/StarSparrow/StarSparrow_Emission.png",
+      "normalMap": "Textures/StarSparrow/StarSparrow_Normal.png",
+      "metallicSmoothnessMap": "Textures/StarSparrow/StarSparrow_MetallicSmoothness.png",
+      "emissionMap": "Textures/StarSparrow/StarSparrow_Emission.png",
       "skins": [
         {
           "name": "Black",
-          "file": "textures/StarSparrow/StarSparrow_Black.png",
+          "file": "Textures/StarSparrow/StarSparrow_Black.png",
           "color": "#2c3e50",
           "unlocked": true
         },
         {
           "name": "Blue",
-          "file": "textures/StarSparrow/StarSparrow_Blue.png",
+          "file": "Textures/StarSparrow/StarSparrow_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Cyan",
-          "file": "textures/StarSparrow/StarSparrow_Cyan.png",
+          "file": "Textures/StarSparrow/StarSparrow_Cyan.png",
           "color": "#1abc9c",
           "unlocked": false
         },
         {
           "name": "Green",
-          "file": "textures/StarSparrow/StarSparrow_Green.png",
+          "file": "Textures/StarSparrow/StarSparrow_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/StarSparrow/StarSparrow_Grey.png",
+          "file": "Textures/StarSparrow/StarSparrow_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Orange",
-          "file": "textures/StarSparrow/StarSparrow_Orange.png",
+          "file": "Textures/StarSparrow/StarSparrow_Orange.png",
           "color": "#e67e22",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/StarSparrow/StarSparrow_Purple.png",
+          "file": "Textures/StarSparrow/StarSparrow_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/StarSparrow/StarSparrow_Red.png",
+          "file": "Textures/StarSparrow/StarSparrow_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/StarSparrow/StarSparrow_White.png",
+          "file": "Textures/StarSparrow/StarSparrow_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         },
         {
           "name": "Yellow",
-          "file": "textures/StarSparrow/StarSparrow_Yellow.png",
+          "file": "Textures/StarSparrow/StarSparrow_Yellow.png",
           "color": "#f1c40f",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/StriderOx/StriderOx_Normal.png",
-      "metallicSmoothnessMap": "textures/StriderOx/StriderOx_MetallicSmoothness.png",
-      "emissionMap": "textures/StriderOx/StriderOx_Emission.png",
+      "normalMap": "Textures/StriderOx/StriderOx_Normal.png",
+      "metallicSmoothnessMap": "Textures/StriderOx/StriderOx_MetallicSmoothness.png",
+      "emissionMap": "Textures/StriderOx/StriderOx_Emission.png",
       "skins": [
         {
           "name": "Blue",
-          "file": "textures/StriderOx/StriderOx_Blue.png",
+          "file": "Textures/StriderOx/StriderOx_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Green",
-          "file": "textures/StriderOx/StriderOx_Green.png",
+          "file": "Textures/StriderOx/StriderOx_Green.png",
           "color": "#27ae60",
           "unlocked": true
         },
         {
           "name": "Grey",
-          "file": "textures/StriderOx/StriderOx_Grey.png",
+          "file": "Textures/StriderOx/StriderOx_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Orange",
-          "file": "textures/StriderOx/StriderOx_Orange.png",
+          "file": "Textures/StriderOx/StriderOx_Orange.png",
           "color": "#e67e22",
           "unlocked": false
         },
         {
           "name": "Pine",
-          "file": "textures/StriderOx/StriderOx_Pine.png",
+          "file": "Textures/StriderOx/StriderOx_Pine.png",
           "color": "#01796F",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/StriderOx/StriderOx_Purple.png",
+          "file": "Textures/StriderOx/StriderOx_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/StriderOx/StriderOx_Red.png",
+          "file": "Textures/StriderOx/StriderOx_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "Silver",
-          "file": "textures/StriderOx/StriderOx_Silver.png",
+          "file": "Textures/StriderOx/StriderOx_Silver.png",
           "color": "#C0C0C0",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/StriderOx/StriderOx_White.png",
+          "file": "Textures/StriderOx/StriderOx_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         }
       ]
     },
     {
-      "normalMap": "textures/VoidWhale/VoidWhale_Normal.png",
-      "metallicSmoothnessMap": "textures/VoidWhale/VoidWhale_MetallicSmoothness.png",
-      "emissionMap": "textures/VoidWhale/VoidWhale_Emission1.png",
+      "normalMap": "Textures/VoidWhale/VoidWhale_Normal.png",
+      "metallicSmoothnessMap": "Textures/VoidWhale/VoidWhale_MetallicSmoothness.png",
+      "emissionMap": "Textures/VoidWhale/VoidWhale_Emission1.png",
       "skins": [
         {
           "name": "Blue",
-          "file": "textures/VoidWhale/VoidWhale_Blue.png",
+          "file": "Textures/VoidWhale/VoidWhale_Blue.png",
           "color": "#3498db",
           "unlocked": true
         },
         {
           "name": "Cyan",
-          "file": "textures/VoidWhale/VoidWhale_Cyan.png",
+          "file": "Textures/VoidWhale/VoidWhale_Cyan.png",
           "color": "#1abc9c",
           "unlocked": true
         },
         {
           "name": "Green",
-          "file": "textures/VoidWhale/VoidWhale_Green.png",
+          "file": "Textures/VoidWhale/VoidWhale_Green.png",
           "color": "#27ae60",
           "unlocked": false
         },
         {
           "name": "Grey",
-          "file": "textures/VoidWhale/VoidWhale_Grey.png",
+          "file": "Textures/VoidWhale/VoidWhale_Grey.png",
           "color": "#7f8c8d",
           "unlocked": false
         },
         {
           "name": "Purple",
-          "file": "textures/VoidWhale/VoidWhale_Purple.png",
+          "file": "Textures/VoidWhale/VoidWhale_Purple.png",
           "color": "#9b59b6",
           "unlocked": false
         },
         {
           "name": "Red",
-          "file": "textures/VoidWhale/VoidWhale_Red.png",
+          "file": "Textures/VoidWhale/VoidWhale_Red.png",
           "color": "#e74c3c",
           "unlocked": false
         },
         {
           "name": "RedOriginal",
-          "file": "textures/VoidWhale/VoidWhale_RedOriginal.png",
+          "file": "Textures/VoidWhale/VoidWhale_RedOriginal.png",
           "color": "#C0392B",
           "unlocked": false
         },
         {
           "name": "Tan",
-          "file": "textures/VoidWhale/VoidWhale_Tan.png",
+          "file": "Textures/VoidWhale/VoidWhale_Tan.png",
           "color": "#D2B48C",
           "unlocked": false
         },
         {
           "name": "White",
-          "file": "textures/VoidWhale/VoidWhale_White.png",
+          "file": "Textures/VoidWhale/VoidWhale_White.png",
           "color": "#ecf0f1",
           "unlocked": false
         },
         {
           "name": "Yellow",
-          "file": "textures/VoidWhale/VoidWhale_Yellow.png",
+          "file": "Textures/VoidWhale/VoidWhale_Yellow.png",
           "color": "#f1c40f",
           "unlocked": false
         }
